@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Terms of Service - Almazuela Picross</title>
+    <style> 
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding: 2em; line-height: 1.6; color: #333; max-width: 800px; margin: auto; }
+        h1 { color: #2c3e50; }
+        strong { color: #000; }
+        ul { margin-bottom: 1.5em; }
+        hr { border: 0; border-top: 1px solid #eee; margin: 2em 0; }
+    </style>
+</head>
+<body>
+    <h1>Terms of Service</h1>
+    <p>These Terms of Service apply to the <strong>Almazuela Picross</strong> app (hereby referred to as "Application") for mobile devices that was created by <strong>Erveca Studio</strong> (hereby referred to as "Service Provider") as a Free service. By downloading or using the Application, you agree to be bound by these terms.</p>
+
+    <br>
+    <strong>Acceptance of Terms</strong>
+    <p>By accessing or using the Application, you confirm that you are at least 13 years of age and agree to these Terms of Service. If you do not agree to these terms, please do not use the Application.</p>
+
+    <br>
+    <strong>License to Use</strong>
+    <p>The Service Provider grants you a limited, non-exclusive, non-transferable, revocable license to use the Application for your personal, non-commercial purposes. You may not:</p>
+    <ul>
+        <li>Copy, modify, or distribute the Application or any part of it.</li>
+        <li>Reverse engineer, decompile, or attempt to extract the source code of the Application.</li>
+        <li>Use the Application for any unlawful or unauthorized purpose.</li>
+        <li>Attempt to interfere with or disrupt the integrity or performance of the Application.</li>
+    </ul>
+
+    <br>
+    <strong>In-App Purchases</strong>
+    <p>The Application offers optional in-app purchases (e.g., to remove advertisements or unlock premium features). All purchases are processed securely by the <strong>Google Play Store</strong>. All sales are final unless otherwise required by applicable law. The Service Provider is not responsible for any charges resulting from unauthorized use of your account.</p>
+
+    <br>
+    <strong>User Accounts and Google Sign-In</strong>
+    <p>The Application offers optional account features via <strong>Google Sign-In</strong>, which may allow you to save your progress and synchronize your game data across devices using <strong>Google Play Games Services</strong>. By using these features, you also agree to <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Google's Terms of Service</a>. The Service Provider is not responsible for any loss of data resulting from account issues outside of its control.</p>
+
+    <br>
+    <strong>Advertisements</strong>
+    <p>The free version of the Application may display advertisements provided by <strong>Google AdMob</strong>. These ads help support the continued development of the Application. You can remove ads via an in-app purchase.</p>
+
+    <br>
+    <strong>Intellectual Property</strong>
+    <p>All content within the Application, including but not limited to graphics, puzzle designs, music, and code, is the property of <strong>Erveca Studio</strong> and is protected by applicable intellectual property laws. You may not reproduce or distribute any content from the Application without prior written permission.</p>
+
+    <br>
+    <strong>Disclaimer of Warranties</strong>
+    <p>The Application is provided "AS IS" without warranties of any kind, either express or implied. The Service Provider does not warrant that the Application will be uninterrupted, error-free, or free of viruses or other harmful components.</p>
+
+    <br>
+    <strong>Limitation of Liability</strong>
+    <p>To the fullest extent permitted by law, the Service Provider shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of or inability to use the Application, even if the Service Provider has been advised of the possibility of such damages.</p>
+
+    <br>
+    <strong>Changes to Terms</strong>
+    <p>The Service Provider reserves the right to modify these Terms of Service at any time. Changes will be posted on this page with an updated effective date. Continued use of the Application after any changes constitutes your acceptance of the new terms.</p>
+
+    <br>
+    <strong>Termination</strong>
+    <p>The Service Provider reserves the right to terminate or suspend your access to the Application at any time, without notice, for conduct that violates these Terms of Service or is otherwise harmful to other users, the Service Provider, or third parties.</p>
+
+    <p><strong>Effective Date:</strong> 2026-05-21</p>
+
+    <br>
+    <strong>Contact Us</strong>
+    <p>If you have any questions regarding these Terms of Service, please contact the Service Provider via email at <strong>juegoerveca@gmail.com</strong>.</p>
+
+    <hr>
+    <p><small>These Terms of Service were written for Almazuela Picross by Erveca Studio.</small></p>
+</body>
+</html>
