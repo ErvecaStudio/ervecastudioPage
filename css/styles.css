@@ -32,6 +32,11 @@ html { scroll-behavior: smooth; }
   }
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background: var(--cream);
   color: var(--ink);
@@ -120,6 +125,7 @@ nav {
   background: var(--ink);
   display: block;
   transition: transform .25s ease, opacity .25s ease;
+  forced-color-adjust: none;
 }
 
 /* ── PAGE HERO (subpáginas) ── */
@@ -241,8 +247,14 @@ h1 em, h2 em { font-style: italic; color: var(--rust); }
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
-#hero-canvas { width: 100%; height: 100%; display: block; }
+#hero-canvas {
+  width: 100%;
+  height: 100%;
+  max-width: 100%; 
+  display: block;
+}
 .hero-visual-caption {
   position: absolute;
   bottom: .75rem; right: 0;
