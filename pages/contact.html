@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto — Erveca Studio</title>
+  <meta name="description" content="Ponte en contacto con Erveca Studio: redes sociales, correo y formulario de contacto." />
+  <link rel="icon" type="image/png" href="../img/Favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="../index.html" class="nav-logo">
+      <img src="../img/Imagotipo.png" alt="Erveca Studio" />
+    </a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="philosophy.html">Filosofía</a></li>
+      <li><a href="games.html">Videojuegos</a></li>
+      <li><a href="team.html">Quiénes somos</a></li>
+      <li><a href="contact.html" class="active">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <p class="section-label fade-up">Hablemos</p>
+    <h1 class="fade-up d1">Te leemos <em>desde Pradillo</em></h1>
+    <p class="lead fade-up d2">
+      ¿Tienes una pregunta, una propuesta de colaboración o simplemente quieres saludar? Escríbenos por correo, redes sociales o el formulario.
+    </p>
+  </div>
+
+  <!-- CONTACTO -->
+  <section>
+    <div class="section-inner contact-grid">
+
+      <div class="fade-up">
+        <p class="section-label">Otras vías</p>
+        <h2>Encuéntranos <em>por aquí</em></h2>
+        <p style="max-width: 50ch;">
+          Seguimos el desarrollo de nuestros juegos casi a diario en redes sociales, donde compartimos avances, capturas y noticias sobre Pradillo y Cameros.
+        </p>
+
+        <ul class="contact-list">
+          <li>
+            <a href="mailto:juegoerveca@gmail.com">
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18v14H3z"/><path d="M3 7l9 6 9-6"/></svg>
+              </span>
+              juegoerveca@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="https://erveca.itch.io/" target="_blank" rel="noopener">
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8l2-4h16l2 4"/><path d="M2 8h20v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"/><path d="M8 12v0a2 2 0 0 1-4 0"/><path d="M16 12v0a2 2 0 0 1-4 0"/></svg>
+              </span>
+              itch.io/erveca
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/erveca_studio" target="_blank" rel="noopener">
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+              </span>
+              @erveca_studio
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/ErvecaRPG" target="_blank" rel="noopener">
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </span>
+              Erveca
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@ErvecaStudio" target="_blank" rel="noopener">
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg>
+              </span>
+              @ErvecaStudio
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="fade-up d1">
+        <p class="section-label">Formulario</p>
+        <h2>Escríbenos <em>directamente</em></h2>
+        <form class="contact-form" novalidate>
+          <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="name" required />
+          </div>
+          <div>
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" autocomplete="email" required />
+          </div>
+          <div>
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-brand">
+      <img src="../img/logo-erveca-mono.png" alt="" />
+      Erveca Studio
+    </div>
+    <ul class="footer-links">
+      <li><a href="https://erveca.itch.io/" target="_blank" rel="noopener">itch.io</a></li>
+      <li><a href="https://www.instagram.com/erveca_studio" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://www.facebook.com/ErvecaRPG" target="_blank" rel="noopener">Facebook</a></li>
+      <li><a href="https://www.youtube.com/@ErvecaStudio" target="_blank" rel="noopener">YouTube</a></li>
+    </ul>
+    <p class="footer-copy">© 2024–2026 Erveca Studio · Pradillo, La Rioja, España</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
