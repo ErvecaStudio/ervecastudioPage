@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Disallow: /img/raw/
+Disallow: /temp/
+Disallow: /backup/
+
+Allow: /json/
+Allow: /js/
+
+Sitemap: https://ervecastudio.es/sitemap.xml

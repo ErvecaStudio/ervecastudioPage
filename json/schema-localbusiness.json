@@ -1,0 +1,15 @@
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Erveca Studio",
+  "image": "https://ervecastudio.es/img/Favicon.png",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Cameros",
+    "addressRegion": "La Rioja",
+    "addressCountry": "ES"
+  },
+  "url": "https://ervecastudio.es",
+  "description": "Estudio indie de videojuegos ubicado en Cameros, La Rioja."
+}
+

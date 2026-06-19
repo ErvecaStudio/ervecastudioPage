@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "Almazuela Picross",
+  "author": "Erveca Studio",
+  "publisher": "Erveca Studio",
+  "url": "https://ervecastudio.es/pages/games.html",
+  "genre": "Puzzle, Cozy",
+  "gamePlatform": "PC",
+  "description": "Videojuego inspirado en las almazuelas tradicionales de La Rioja."
+}
