@@ -94,7 +94,6 @@
     ctx.globalAlpha = 0.96;
     ctx.translate(width / 2, height / 2);
 
-    // Halo suave
     const gradient = ctx.createRadialGradient(0, 0, w * 0.2, 0, 0, w * 0.85);
     gradient.addColorStop(0, 'rgba(200,146,42,0.18)');
     gradient.addColorStop(1, 'rgba(200,146,42,0)');

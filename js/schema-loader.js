@@ -19,6 +19,10 @@ const schemas = {
   "contact.html": [
     "schema-organization.json",
     "schema-contact.json"
+  ],
+  "support.html": [
+    "schema-organization.json",
+    "schema-support.json"
   ]
 };
 

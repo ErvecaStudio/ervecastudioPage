@@ -1,0 +1,38 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Apoya a Erveca Studio",
+  "url": "https://ervecastudio.es/pages/support.html",
+  "description": "Formas de apoyar a Erveca Studio: compra nuestros juegos en Google Play o Steam, adquiere merchandising o realiza una donación por PayPal.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Erveca Studio",
+    "url": "https://ervecastudio.es"
+  },
+  "potentialAction": [
+    {
+      "@type": "BuyAction",
+      "name": "Comprar Almazuela Picross en Google Play",
+      "target": "https://play.google.com/store/apps/details?id=com.ervecastudio.almazuelapicross"
+    },
+    {
+      "@type": "BuyAction",
+      "name": "Comprar Almazuela Picross en Steam",
+      "target": "https://store.steampowered.com/app/4539810/Almazuela_Picross/"
+    },
+    {
+      "@type": "BuyAction",
+      "name": "Comprar merchandising en La Frikilería",
+      "target": "https://lafrikileria.com/es/creador-flash/102993-llavero-ganchillo-almazuela-picross-erveca.html"
+    },
+    {
+      "@type": "DonateAction",
+      "name": "Donar a Erveca Studio vía PayPal",
+      "target": "https://www.paypal.com/donate/?hosted_button_id=MEYHJ89DJ324N",
+      "recipient": {
+        "@type": "Organization",
+        "name": "Erveca Studio"
+      }
+    }
+  ]
+}
