@@ -1,8 +1,8 @@
 /* ============================================================
-   ERVECA STUDIO — Hoja de estilos compartida
-   Paleta: cream #f5f0e8 · ink #1a1610 · rust #b84a2e
+   ERVECA STUDIO — shared stylesheet
+   Colors: cream #f5f0e8 · ink #1a1610 · rust #b84a2e
            gold #c8922a · sage #5a6e52 · parchment #ede6d4
-   Tipografías: Playfair Display (display) + DM Sans (texto)
+   Typographies: Playfair Display (display) + DM Sans (text)
    ============================================================ */
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
