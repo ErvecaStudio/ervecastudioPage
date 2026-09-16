@@ -215,7 +215,9 @@
   }
 
   function zigzagVertices(pts, amp, seed) {
-    var rnd = mulberry32(seed);
+    var waveAmp = amp * 0.55;
+    var waveLength = 130;
+
     var v = [];
     var first = pts[0];
     var last = pts[pts.length - 1];
@@ -225,13 +227,15 @@
     for (var i = 0; i < pts.length - 1; i++) {
       v.push(pts[i]);
       var a = pts[i], b = pts[i + 1];
-      var steps = 3;
+      var dist = Math.hypot(b.x - a.x, b.y - a.y);
+      var halfCycles = Math.max(1, Math.round(dist / waveLength));
+      var steps = Math.max(5, halfCycles * 4);
+
       for (var s = 1; s <= steps; s++) {
         var t = s / (steps + 1);
-        var dir = (s % 2 === 0) ? 1 : -1;
-        var jitter = amp * (0.5 + rnd() * 0.9) * dir;
+        var offset = waveAmp * Math.sin(halfCycles * Math.PI * t);
         v.push({
-          x: a.x + (b.x - a.x) * t + jitter,
+          x: a.x + (b.x - a.x) * t + offset,
           y: a.y + (b.y - a.y) * t
         });
       }
