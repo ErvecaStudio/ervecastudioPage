@@ -682,6 +682,158 @@ p { opacity: .8; }
 }
 .support-note p { font-size: .95rem; opacity: .75; line-height: 1.8; }
 
+/* ── ROADMAP / PRÓXIMAMENTE ── */
+ 
+.roadmap-section { padding-top: 2rem; }
+ 
+.track-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.track-tab { font-size: .85rem; padding: .75rem 1.6rem; }
+.track-tab:focus-visible { outline: 2px solid var(--rust); outline-offset: 3px; }
+ 
+.track-intro {
+  margin: 2rem 0 0;
+  max-width: 65ch;
+  font-size: .98rem;
+  opacity: .75;
+}
+ 
+.roadmap {
+  position: relative;
+  max-width: 940px;
+  margin: 4rem auto 0;
+}
+ 
+.roadmap-svg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+  z-index: 0;
+}
+ 
+.rm-path-base {
+  stroke: var(--rust);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-dasharray: 6 10;
+  opacity: .35;
+}
+.rm-path-done {
+  stroke: var(--rust);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+}
+ 
+.roadmap-items {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+ 
+.roadmap-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3.5rem;
+}
+
+.rm-item {
+  display: grid;
+  grid-template-columns: 1fr 110px 1fr;
+  align-items: center;
+}
+.rm-item.left  .rm-card { grid-column: 1; }
+.rm-item.right .rm-card { grid-column: 3; }
+.rm-item .rm-node { grid-column: 2; }
+ 
+.rm-node { display: flex; align-items: center; justify-content: center; }
+ 
+.rm-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--parchment);
+  border: 2px solid var(--rust);
+  opacity: .45;
+  box-shadow: 0 0 0 6px var(--parchment);
+}
+.is-done .rm-dot { background: var(--rust); opacity: 1; }
+.is-next .rm-dot {
+  width: 21px;
+  height: 21px;
+  border-width: 3px;
+  opacity: 1;
+  box-shadow: 0 0 0 6px var(--parchment), 0 0 0 9px rgba(184,74,46,.2);
+}
+ 
+.rm-card {
+  background: var(--cream);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 4px 20px var(--shadow);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  transition: transform .3s, box-shadow .3s;
+}
+.rm-card.is-link:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(26,22,16,.18); }
+.rm-card .card-img { height: 170px; }
+.rm-card .card-img img { transition: transform .4s; }
+.rm-card.is-link:hover .card-img img { transform: scale(1.05); }
+.rm-card .card-body { padding: 1.4rem 1.6rem 1.75rem; }
+.rm-card .card-body h3 { font-size: 1.3rem; }
+.rm-card .card-body p { margin-bottom: 0; }
+ 
+.rm-item.is-future .rm-card { opacity: .82; }
+.rm-item.is-next .rm-card { box-shadow: 0 18px 46px rgba(26,22,16,.16); }
+ 
+.rm-item.is-next .rm-card { position: relative; }
+.rm-item.is-next .rm-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 1.5px solid var(--rust);
+  border-radius: var(--radius);
+  pointer-events: none;
+}
+ 
+.rm-date {
+  font-size: .75rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--rust);
+  opacity: 1;
+  margin-bottom: .45rem;
+}
+.rm-place {
+  margin-top: .85rem !important;
+  font-size: .78rem;
+  letter-spacing: .06em;
+  opacity: .5;
+}
+.rm-card .card-link { margin-top: 1.25rem; }
+ 
+.roadmap-status {
+  margin-top: 3.5rem;
+  text-align: center;
+  font-size: .78rem;
+  letter-spacing: .08em;
+  opacity: .4;
+}
+
+.load-more-btn[hidden] { display: none !important; }
+.rm-item.rm-hidden { display: none; }
+
 /* ── FOOTER ── */
 footer {
   background: var(--ink);
@@ -729,18 +881,15 @@ footer {
 .d4 { transition-delay: .4s; }
 
 /* ── RESPONSIVE ── */
-@media (max-width: 1000px) {
-  .games-grid.three { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (max-width: 1080px) {
+@media (max-width: 1240px) {
   nav { padding: 1.2rem 2rem; }
-  .nav-links { gap: 1.5rem; }
+  .nav-links { gap: 1.4rem; }
+  .nav-links a { font-size: .8rem; letter-spacing: .05em; }
 }
-
-@media (max-width: 900px) {
+ 
+@media (max-width: 1180px) {
   nav { padding: 1rem 1.5rem; }
-
+ 
   .nav-links {
     position: fixed;
     top: 64px; left: 0; right: 0;
@@ -753,8 +902,15 @@ footer {
     transition: transform .3s ease;
   }
   .nav-links.open { transform: translateY(0); }
+  .nav-links a { font-size: .85rem; letter-spacing: .08em; }
   .nav-toggle { display: flex; }
+}
 
+@media (max-width: 1000px) {
+  .games-grid.three { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; padding: 7rem 1.5rem 3rem; }
   .hero-visual { height: 320px; order: -1; }
 
@@ -775,6 +931,18 @@ footer {
   .support-note { flex-direction: column; gap: 1rem; padding: 2rem 1.5rem; }
 
   footer { flex-direction: column; align-items: flex-start; padding: 2.5rem 1.5rem; }
+}
+
+@media (max-width: 760px) {
+  .roadmap { margin-top: 2.5rem; }
+  .roadmap-items { gap: 2.5rem; }
+  .rm-item,
+  .rm-item.left,
+  .rm-item.right { grid-template-columns: 54px 1fr; }
+  .rm-item.left .rm-card,
+  .rm-item.right .rm-card { grid-column: 2; }
+  .rm-item .rm-node { grid-column: 1; }
+  .rm-card .card-img { height: 140px; }
 }
 
 @media (max-width: 480px) {

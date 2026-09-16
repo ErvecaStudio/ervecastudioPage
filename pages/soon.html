@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light">
+  <title>Próximamente — Erveca Studio</title>
+  <meta name="description" content="Hoja de ruta de Erveca Studio: eventos, ferias y el desarrollo de Almazuela Picross, Erveca y nuestro nuevo juego de puzles." />
+  <meta name="keywords" content="Erveca Studio, roadmap, próximamente, eventos videojuegos La Rioja, Almazuela Picross, Erveca RPG" />
+  <link rel="icon" type="image/png" href="../img/Favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script src="/js/schema-loader.js"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="../index.html" class="nav-logo">
+      <img src="../img/Imagotipo.png" alt="Erveca Studio" />
+    </a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="philosophy.html">Filosofía</a></li>
+      <li><a href="games.html">Videojuegos</a></li>
+      <li><a href="soon.html" class="active">Próximamente</a></li>
+      <li><a href="team.html">Quiénes somos</a></li>
+      <li><a href="contact.html">Contacto</a></li>
+      <li><a href="support.html">Apóyanos</a></li>
+    </ul>
+  </nav>
+
+  <!-- INTRO -->
+  <header class="page-hero">
+    <p class="section-label fade-up">Próximamente</p>
+    <h1 class="fade-up d1">Por dónde <em>vamos</em></h1>
+    <p class="lead fade-up d2">
+      Aquí contamos en qué estamos trabajando y dónde nos vas a encontrar. Cada camino se lee de abajo arriba: al pie queda lo ya recorrido y arriba lo que todavía está por llegar. Al abrirlo te dejamos directamente en la próxima parada.
+    </p>
+  </header>
+
+  <!-- ROADMAPS -->
+  <section class="roadmap-section games">
+    <div class="section-inner">
+
+      <div class="track-tabs fade-up" role="tablist" aria-label="Hojas de ruta"></div>
+
+      <p class="track-intro fade-up d1"></p>
+
+      <div class="roadmap" id="roadmap">
+        <svg class="roadmap-svg" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+          <path class="rm-path-base" fill="none" />
+          <path class="rm-path-done" fill="none" />
+        </svg>
+        <div class="roadmap-items"></div>
+        <div class="roadmap-controls">
+          <button type="button" class="btn btn-secondary load-more-btn" id="rm-load-more" hidden>Cargar más</button>
+          <button type="button" class="btn btn-secondary scroll-top-btn" id="rm-scroll-top">Subir ↑</button>
+        </div>
+      </div>
+
+      <p class="roadmap-status" role="status"></p>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-brand">
+      <img src="../img/LogotipoB.png" alt="" />
+    </div>
+    <ul class="footer-links">
+      <li><a href="https://erveca.itch.io/" target="_blank" rel="noopener">itch.io</a></li>
+      <li><a href="https://www.instagram.com/erveca_studio" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://www.facebook.com/ErvecaRPG" target="_blank" rel="noopener">Facebook</a></li>
+      <li><a href="https://www.youtube.com/@ErvecaStudio" target="_blank" rel="noopener">YouTube</a></li>
+    </ul>
+    <p class="footer-copy">© 2024–2026 Erveca Studio · Pradillo, La Rioja, España</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/roadmap.js"></script>
+</body>
+</html>
