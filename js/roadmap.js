@@ -242,17 +242,22 @@
     return v;
   }
 
-  function smoothPath(v) {
-    if (!v.length) return '';
-    var d = 'M ' + v[0].x.toFixed(1) + ' ' + v[0].y.toFixed(1);
-    for (var i = 1; i < v.length - 1; i++) {
-      var mx = (v[i].x + v[i + 1].x) / 2;
-      var my = (v[i].y + v[i + 1].y) / 2;
-      d += ' Q ' + v[i].x.toFixed(1) + ' ' + v[i].y.toFixed(1) +
-           ' ' + mx.toFixed(1) + ' ' + my.toFixed(1);
+  function smoothPath(pts) {
+    if (pts.length < 2) return 'M ' + (pts[0] ? pts[0].x.toFixed(1) + ' ' + pts[0].y.toFixed(1) : '0 0');
+    var d = 'M ' + pts[0].x.toFixed(1) + ' ' + pts[0].y.toFixed(1);
+    for (var i = 0; i < pts.length - 1; i++) {
+      var p0 = pts[i - 1] || pts[i];
+      var p1 = pts[i];
+      var p2 = pts[i + 1];
+      var p3 = pts[i + 2] || p2;
+      var c1x = p1.x + (p2.x - p0.x) / 6;
+      var c1y = p1.y + (p2.y - p0.y) / 6;
+      var c2x = p2.x - (p3.x - p1.x) / 6;
+      var c2y = p2.y - (p3.y - p1.y) / 6;
+      d += ' C ' + c1x.toFixed(1) + ' ' + c1y.toFixed(1) + ', ' +
+           c2x.toFixed(1) + ' ' + c2y.toFixed(1) + ', ' +
+           p2.x.toFixed(1) + ' ' + p2.y.toFixed(1);
     }
-    var l = v[v.length - 1];
-    d += ' L ' + l.x.toFixed(1) + ' ' + l.y.toFixed(1);
     return d;
   }
 
