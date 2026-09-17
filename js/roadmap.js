@@ -89,7 +89,7 @@
     var art = document.createElement('article');
     art.className = 'rm-item ' + side + ' is-' + state;
 
-    var hasLink = state !== 'done' && !!(item.link && item.link.trim());
+    var hasLink = (state !== 'done' || item.linkPermanent) && !!(item.link && item.link.trim());
     var card = document.createElement(hasLink ? 'a' : 'div');
     card.className = 'rm-card' + (hasLink ? ' is-link' : '');
     if (hasLink) {

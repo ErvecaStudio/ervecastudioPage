@@ -13,25 +13,28 @@
           "description": "Llevamos Almazuela Picross por primera vez a Zaragoza en un evento lleno de charlas y demos de videojuegos indie.",
           "image": "../img/zgDevs2026.png",
           "place": "Zaragoza",
-          "link": ""
+          "link": "",
+          "linkPermanent": false
         },
         {
-          "date": "2026-09-19",
+          "date": "2026-09-21",
           "dateLabel": "19-20 septiembre 2026",
           "title": "Expotaku Irun",
           "description": "Llevamos Almazuela Picross durante dos días a la expotaku de Irun con un stand propio. ¿Nos vemos allí?",
           "image": "../img/expotakuIrun2026.png",
           "place": "Irun, Guipuzkoa",
-          "link": "https://www.expotaku.com/irun/"
+          "link": "https://www.expotaku.com/irun/",
+          "linkPermanent": false
         },
         {
-          "date": "2026-10-16",
+          "date": "2026-10-19",
           "dateLabel": "16-18 octubre 2026",
           "title": "Espacio Erveca en el Riojacomic 2026",
           "description": "Costura, talleres sobre el impacto del videojuego sobre nosotros y showcase de Almazuela Picross y otros proyectos. \nMás información proximamente.",
           "image": "../img/riojaComic2026.jpg",
           "place": "Instituto Riojano de la Juventud, Logroño",
-          "link": ""
+          "link": "",
+          "linkPermanent": false
         }
       ]
     },
@@ -47,7 +50,8 @@
           "title": "Lanzamiento en Steam y Google Play",
           "description": "Llega el taller digital de almazuelas a PC y Android. ¿Nos ayudas a tejer las 20 almazuelas que las artesanas de Cameros nos han mostrado?",
           "image": "../img/CapsulaHorizontal.png",
-          "link": ""
+          "link": "",
+          "linkPermanent": false
         },
         {
           "date": "2026-08-22",
@@ -55,7 +59,8 @@
           "title": "XIV Fiesta de las Alamzuelas Colgadas",
           "description": "Actualización que incluye otras ocho almazuelas de la Comarca de Cameros y un concurso de diseño de almazuelas ¡para todos los que queráis participar!",
           "image": "../img/almazuelaPicrossUp01.png",
-          "link": ""
+          "link": "",
+          "linkPermanent": false
         },
         {
           "date": "2026-11-01",
@@ -63,7 +68,8 @@
           "title": "Actualización de otoño",
           "description": "Nuevas almazuelas y mejoras de accesibilidad para que nadie se quede sin tejer.",
           "image": "../img/almazuelaPicrossGeneric.png",
-          "link": ""
+          "link": "",
+          "linkPermanent": false
         }
       ]
     },
@@ -78,21 +84,27 @@
           "dateLabel": "27-28 diciembre 2025",
           "title": "Demo de misiones",
           "description": "Creación del sistema de eventos y misiones con un primer encargo jugable en que se puede recorrer el mapa creado buscando 5 almazuelas.",
-          "image": "../img/Erveca01.png"
+          "image": "../img/Erveca01.png",
+          "link": "",
+          "linkPermanent": false
         },
         {
           "date": "2026-02-07",
           "dateLabel": "7-8 febrero 2026",
           "title": "Corrección de errores y mejoras de ambientación",
           "description": "Adición de nuevos elementos gráficos que mejoran la ambientación y corrección de errores de la demo de misiones.",
-          "image": "../img/Erveca02.png"
+          "image": "../img/Erveca02.png",
+          "link": "",
+          "linkPermanent": false
         },
         {
           "date": "2027-03-07",
           "dateLabel": "Primer trimestre 2027",
           "title": "Demo pública en itch.io",
           "description": "Introducción de los sistemas de Almazuela Picross a Erveca añadiendo contenido a la demo existente.",
-          "image": "../img/ervecaGeneric.png"
+          "image": "../img/ervecaGeneric.png",
+          "link": "",
+          "linkPermanent": false
         }
       ]
     }
