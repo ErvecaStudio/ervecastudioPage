@@ -4,10 +4,11 @@
   var DATA_URL = '../data/events.json';
   var NAV_OFFSET = 120;
 
-  var headerEl = document.querySelector('.event-header');
-  var tabsEl   = document.querySelector('.day-tabs');
-  var gridEl   = document.querySelector('.activities-grid');
-  var statusEl = document.querySelector('.event-status');
+  var headerEl     = document.querySelector('.event-header');
+  var tabsEl       = document.querySelector('.day-tabs');
+  var gridEl       = document.querySelector('.activities-grid');
+  var statusEl     = document.querySelector('.event-status');
+  var eventLogosEl = document.querySelector('.event-logos');
   if (!tabsEl || !gridEl) return;
 
   var events = [];
@@ -60,21 +61,97 @@
     return next || days[days.length - 1];
   }
 
+  function placeName(place) {
+    if (!place) return '';
+    return typeof place === 'string' ? place : (place.name || '');
+  }
+
+  function placeMapsUrl(place) {
+    if (!place || typeof place === 'string') return '';
+    return place.mapsUrl || '';
+  }
+
   function renderHeader(ev) {
     if (!headerEl) return;
     headerEl.innerHTML = '';
+
+    var inner = document.createElement('div');
+    inner.className = 'event-header-inner';
+
+    if (ev.logo && ev.logo.src) {
+      var badgeHasLink = !!(ev.logo.link && ev.logo.link.trim());
+      var badge = document.createElement(badgeHasLink ? 'a' : 'div');
+      badge.className = 'event-logo-badge';
+      if (badgeHasLink) {
+        badge.href = ev.logo.link;
+        if (/^https?:/.test(ev.logo.link)) { badge.target = '_blank'; badge.rel = 'noopener'; }
+      }
+      var badgeImg = document.createElement('img');
+      badgeImg.src = ev.logo.src;
+      badgeImg.alt = ev.logo.alt || '';
+      badge.appendChild(badgeImg);
+      inner.appendChild(badge);
+    }
+
+    var textWrap = document.createElement('div');
+    textWrap.className = 'event-header-text';
+
     var h = document.createElement('h2');
     h.textContent = ev.name || '';
-    headerEl.appendChild(h);
+    textWrap.appendChild(h);
 
     var meta = document.createElement('p');
     meta.className = 'event-meta';
-    var bits = [];
-    if (ev.place) bits.push(ev.place);
+
+    var name = placeName(ev.place);
+    var mapsUrl = placeMapsUrl(ev.place);
+    if (name) {
+      if (mapsUrl) {
+        var placeLink = document.createElement('a');
+        placeLink.href = mapsUrl;
+        placeLink.target = '_blank';
+        placeLink.rel = 'noopener';
+        placeLink.className = 'event-place-link';
+        placeLink.textContent = name;
+        meta.appendChild(placeLink);
+      } else {
+        meta.appendChild(document.createTextNode(name));
+      }
+    }
+
     var range = fmtRange(ev.days || []);
-    if (range) bits.push(range);
-    meta.textContent = bits.join(' · ');
-    headerEl.appendChild(meta);
+    if (range) {
+      if (name) meta.appendChild(document.createTextNode(' · '));
+      meta.appendChild(document.createTextNode(range));
+    }
+
+    textWrap.appendChild(meta);
+    inner.appendChild(textWrap);
+    headerEl.appendChild(inner);
+  }
+
+  function renderEventLogos(ev) {
+    if (!eventLogosEl) return;
+    eventLogosEl.innerHTML = '';
+    var logos = (ev && ev.logos) || [];
+    if (!logos.length) return;
+
+    logos.forEach(function (logo) {
+      if (!logo || !logo.src) return;
+      var hasHref = !!(logo.link && logo.link.trim());
+      var wrap = document.createElement(hasHref ? 'a' : 'span');
+      wrap.className = 'event-logo';
+      if (hasHref) {
+        wrap.href = logo.link;
+        if (/^https?:/.test(logo.link)) { wrap.target = '_blank'; wrap.rel = 'noopener'; }
+      }
+      var img = document.createElement('img');
+      img.src = logo.src;
+      img.alt = logo.alt || '';
+      img.loading = 'lazy';
+      wrap.appendChild(img);
+      eventLogosEl.appendChild(wrap);
+    });
   }
 
   function renderTabs(ev) {
@@ -88,7 +165,7 @@
       btn.setAttribute('aria-selected', 'false');
       btn.dataset.date = day.date;
       btn.textContent = day.dateLabel || day.date;
-      btn.addEventListener('click', function () { selectDay(day, true); });
+      btn.addEventListener('click', function () { selectDay(day); });
       frag.appendChild(btn);
     });
     tabsEl.appendChild(frag);
@@ -267,7 +344,7 @@
     }
   }
 
-  function selectDay(day, scroll) {
+  function selectDay(day) {
     currentDay = day;
     var btns = tabsEl.querySelectorAll('.track-tab');
     for (var i = 0; i < btns.length; i++) {
@@ -278,17 +355,13 @@
     }
     renderActivities(day);
     if (history.replaceState) history.replaceState(null, '', '#' + day.date);
-    if (scroll) {
-      var target = gridEl;
-      var y = window.pageYOffset + target.getBoundingClientRect().top - NAV_OFFSET;
-      window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
-    }
   }
 
   function init(ev) {
     current = ev;
     renderHeader(ev);
     renderTabs(ev);
+    renderEventLogos(ev);
 
     var days = ev.days || [];
     if (!days.length) {

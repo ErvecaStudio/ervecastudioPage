@@ -2,8 +2,30 @@
   "events": [
     {
       "id": "rioja-comic-2026",
-      "name": "Rioja Comic 2026",
-      "place": "Instituto Riojano de la Juventud, Logroño",
+      "name": "III Festival Rioja Cómic",
+      "logo": 
+      {
+        "src": "../img/RiojaComicInner.png",
+        "alt": "Rioja Cómic 2026",
+        "link": "https://www.irj.es/noticias/663-vuelve-rioja-comic"
+      },
+      "place": 
+      {
+        "name": "Instituto Riojano de la Juventud, Logroño",
+        "mapsUrl": "https://www.google.com/maps/place/Instituto+Riojano+de+la+Juventud/@42.4653701,-2.4450783,837m/data=!3m2!1e3!4b1!4m6!3m5!1s0xd5aab474cf09fcb:0x40150e3ca5ab8367!8m2!3d42.4653701!4d-2.4450783!16s%2Fg%2F12qgm4n6h?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D"
+      },
+      "logos": [
+        {
+          "src": "../img/LaRioja.png",
+          "alt": "Gobierno de La Rioja",
+          "link": "https://web.larioja.org/"
+        },
+        {
+          "src": "../img/irj.png",
+          "alt": "Instituto Riojano de la Juventud",
+          "link": "https://www.irj.es/"
+        }
+      ],
       "days": [
         {
           "date": "2026-10-16",
