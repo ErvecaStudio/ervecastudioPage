@@ -1,0 +1,177 @@
+{
+  "events": [
+    {
+      "id": "rioja-comic-2026",
+      "name": "Rioja Comic 2026",
+      "place": "Instituto Riojano de la Juventud, Logroño",
+      "days": [
+        {
+          "date": "2026-10-16",
+          "dateLabel": "Vie 16 oct",
+          "activities": [
+            {
+              "type": "showcase",
+              "start": "17:00",
+              "end": "20:00",
+              "title": "Almazuela Picross",
+              "studio": "Erveca Studio",
+              "description": "Recrea almazuelas, mantas tradicionales, de la Sierra de Cameros mientras resuelves puzles lógicos.",
+              "image": "../img/AlmazuelaPicross.jpg",
+              "link": "games.html#erveca"
+            },
+            {
+              "type": "showcase",
+              "start": "17:00",
+              "end": "20:00",
+              "title": "???",
+              "studio": "Erveca Studio",
+              "description": "El próximo videojuego de Erveca Studio. Se presentará de forma exclusiva en este evento ¿lo probarás?",
+              "image": "../img/unknown_Small.png",
+              "link": ""
+            },
+            {
+              "type": "talk",
+              "showedType": "Taller",
+              "start": "18:00",
+              "end": "19:00",
+              "title": "¿Cómo se hace una almazuela?",
+              "authors": "Maria del Rosario Ruiz - Artesana",
+              "description": "Se hablará de la tradición textil camerana mientras se realiza una almazuela de pequeño tamaño con la metodología de ayer y hoy."
+            }
+
+          ]
+        },
+        {
+          "date": "2026-10-17",
+          "dateLabel": "Sáb 17 oct",
+          "activities": [
+            {
+              "type": "showcase",
+              "start": "11:00",
+              "end": "14:00",
+              "title": "Almazuela Picross",
+              "studio": "Erveca Studio",
+              "description": "Recrea almazuelas, mantas tradicionales, de la Sierra de Cameros mientras resuelves puzles lógicos.",
+              "image": "../img/AlmazuelaPicross.jpg",
+              "link": "games.html"
+            },
+            {
+              "type": "showcase",
+              "start": "11:00",
+              "end": "14:00",
+              "title": "???",
+              "studio": "Erveca Studio",
+              "description": "El próximo videojuego de Erveca Studio. Se presentará de forma exclusiva en este evento ¿lo probarás?",
+              "image": "../img/unknown_Small.png",
+              "link": ""
+            },
+            {
+              "type": "talk",
+              "showedType": "Taller",
+              "start": "12:00",
+              "end": "13:30",
+              "title": "Más allá de la partida",
+              "authors": "Jone Valencia y Lucía Ortega - Psicólogas",
+              "description": "En este taller nos acercaremos a los videojuegos desde la curiosidad, el disfrute y el cuidado. Compartiremos experiencias, hablaremos de cómo podemos incorporar el juego a nuestra vida de una forma saludable y descubriremos qué ocurre cuando hacemos una pausa, conectamos con nosotros mismos y jugamos junto a otras personas. \n\nMás allá de la partida, hay todo un mundo por descubrir."
+            },
+            {
+              "type": "showcase",
+              "start": "17:00",
+              "end": "20:00",
+              "title": "Unclouded",
+              "studio": "Praenaris",
+              "description": "Unclouded se basa en la simplicidad del buscaminas con mecánicas de gestión de recursos para crear una experiencia de un jugador atractiva, rejugable, fresca y familiar.",
+              "image": "../img/Unclouded.png",
+              "link": "https://s.team/a/4414700/"
+            },
+            {
+              "type": "showcase",
+              "start": "17:00",
+              "end": "20:00",
+              "title": "Almazuela Picross",
+              "studio": "Erveca Studio",
+              "description": "Recrea almazuelas, mantas tradicionales, de la Sierra de Cameros mientras resuelves puzles lógicos.",
+              "image": "../img/AlmazuelaPicross.jpg",
+              "link": "games.html#erveca"
+            },
+            {
+              "type": "showcase",
+              "start": "17:00",
+              "end": "20:00",
+              "title": "???",
+              "studio": "Erveca Studio",
+              "description": "El próximo videojuego de Erveca Studio. Se presentará de forma exclusiva en este evento ¿lo probarás?",
+              "image": "../img/unknown.png",
+              "link": ""
+            }
+          ]
+        },
+        {
+          "date": "2026-10-18",
+          "dateLabel": "Dom 18 oct",
+          "activities": [
+            {
+              "type": "showcase",
+              "start": "11:00",
+              "end": "14:00",
+              "title": "Almazuela Picross",
+              "studio": "Erveca Studio",
+              "description": "Recrea almazuelas, mantas tradicionales, de la Sierra de Cameros mientras resuelves puzles lógicos.",
+              "image": "../img/AlmazuelaPicross.jpg",
+              "link": "games.html#erveca"
+            },
+            {
+              "type": "showcase",
+              "start": "11:00",
+              "end": "14:00",
+              "title": "???",
+              "studio": "Erveca Studio",
+              "description": "El próximo videojuego de Erveca Studio. Se presentará de forma exclusiva en este evento ¿lo probarás?",
+              "image": "../img/unknown_Small.png",
+              "link": ""
+            },
+            {
+              "type": "talk",
+              "showedType": "Charla",
+              "start": "12:00",
+              "end": "13:00",
+              "title": "Cultura 3.0",
+              "authors": "Samuel Noval - Desarrollador",
+              "description": "Cómo convertir la cultura del entorno en un rasgo distintivo dentro de un proyecto artístico, compartiéndola con el mundo y reforzando su valor frente a las nuevas formas de creación automatizada."
+            },
+                        {
+              "type": "showcase",
+              "start": "17:00",
+              "end": "19:00",
+              "title": "Ludovareia",
+              "studio": "Oscar Martín",
+              "description": "La ciudad romana de Vareia tiene mucha historia. Puedes conocerla a través de puzzles y minijuegos. Aprendes la historia mientras juegas y disfrutas.",
+              "image": "../img/LudoVareia.jpg",
+              "link": ""
+            },
+            {
+              "type": "showcase",
+              "start": "17:00",
+              "end": "19:00",
+              "title": "Almazuela Picross",
+              "studio": "Erveca Studio",
+              "description": "Recrea almazuelas, mantas tradicionales, de la Sierra de Cameros mientras resuelves puzles lógicos.",
+              "image": "../img/AlmazuelaPicross.jpg",
+              "link": "games.html#erveca"
+            },
+            {
+              "type": "showcase",
+              "start": "17:00",
+              "end": "19:00",
+              "title": "???",
+              "studio": "Erveca Studio",
+              "description": "El próximo videojuego de Erveca Studio. Se presentará de forma exclusiva en este evento ¿lo probarás?",
+              "image": "../img/unknown.png",
+              "link": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

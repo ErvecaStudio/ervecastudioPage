@@ -33,8 +33,8 @@
           "description": "Costura, talleres sobre el impacto del videojuego sobre nosotros y showcase de Almazuela Picross y otros proyectos. \nMás información proximamente.",
           "image": "../img/riojaComic2026.jpg",
           "place": "Instituto Riojano de la Juventud, Logroño",
-          "link": "",
-          "linkPermanent": false
+          "link": "events.html?event=0",
+          "linkPermanent": true
         }
       ]
     },
