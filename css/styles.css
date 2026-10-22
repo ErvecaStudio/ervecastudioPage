@@ -1,19 +1,12 @@
-/* ============================================================
-   ERVECA STUDIO — shared stylesheet
-   Colors: cream #f5f0e8 · ink #1a1610 · rust #b84a2e
-           gold #c8922a · sage #5a6e52 · parchment #ede6d4
-   Typographies: Playfair Display (display) + DM Sans (text)
-   ============================================================ */
-
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --cream:    #f5f0e8;
+  --cream:    #ffffff;
   --ink:      #1a1610;
-  --rust:     #b84a2e;
+  --rust:     #ab482c;
   --gold:     #c8922a;
   --sage:     #5a6e52;
-  --parchment:#ede6d4;
+  --parchment:#eedfd1;
   --shadow:   rgba(26,22,16,.12);
 
   --container: 1200px;
@@ -128,7 +121,7 @@ nav {
   forced-color-adjust: none;
 }
 
-/* ── PAGE HERO (subpáginas) ── */
+/* ── PAGE HERO ── */
 .page-hero {
   padding: 9rem 4rem 4rem;
   max-width: var(--container);
@@ -240,7 +233,7 @@ h1 em, h2 em { font-style: italic; color: var(--rust); }
 }
 .btn-secondary:hover { opacity: 1; }
 
-/* ── HERO CANVAS (animación del logo / almazuela) ── */
+/* ── HERO CANVAS ── */
 .hero-visual {
   position: relative;
   height: 520px;
@@ -398,7 +391,7 @@ p { opacity: .8; }
 }
 .about.reverse .about-deco { right: auto; left: -1.5rem; }
 
-/* ── PERSON CARD (equipo) ── */
+/* ── PERSON CARD ── */
 .team-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -580,24 +573,6 @@ p { opacity: .8; }
   border-bottom: 1px solid rgba(26,22,16,.07);
 }
 
-.support-card-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.25rem;
-}
-.support-card-icon.rust { background: rgba(184,74,46,.12); }
-.support-card-icon.gold { background: rgba(200,146,42,.12); }
-.support-card-icon.sage { background: rgba(90,110,82,.12); }
-
-.support-card-icon svg { width: 22px; height: 22px; stroke-width: 1.6; fill: none; }
-.support-card-icon.rust svg { stroke: var(--rust); }
-.support-card-icon.gold svg { stroke: var(--gold); }
-.support-card-icon.sage svg { stroke: var(--sage); }
-
 .support-card-header h3 { font-size: 1.25rem; margin-bottom: .35rem; }
 .support-card-header .eyebrow {
   font-size: .7rem;
@@ -682,7 +657,7 @@ p { opacity: .8; }
 }
 .support-note p { font-size: .95rem; opacity: .75; line-height: 1.8; }
 
-/* ── ROADMAP / PRÓXIMAMENTE ── */
+/* ── ROADMAP ── */
  
 .roadmap-section { padding-top: 2rem; }
  
