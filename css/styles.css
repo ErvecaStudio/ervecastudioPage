@@ -1108,6 +1108,8 @@ a.event-logo:hover {
   .time-slot-showcases,
   .time-slot-showcases.count-1,
   .time-slot-showcases.count-2 { grid-template-columns: 1fr; }
+  .card-img { height: auto; aspect-ratio: 16/9; background: #fff; }
+  .card-img img { object-fit: contain; }
 }
 
 @media (max-width: 480px) {
