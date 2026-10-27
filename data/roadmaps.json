@@ -11,7 +11,7 @@
           "dateLabel": "12-13 septiembre 2026",
           "title": "ZGDevs 2026",
           "description": "Llevamos Almazuela Picross por primera vez a Zaragoza en un evento lleno de charlas y demos de videojuegos indie.",
-          "image": "../img/zgDevs2026.png",
+          "image": "../img/zgDevs2026.webp",
           "place": "Zaragoza",
           "link": "",
           "linkPermanent": false
@@ -21,7 +21,7 @@
           "dateLabel": "19-20 septiembre 2026",
           "title": "Expotaku Irun",
           "description": "Llevamos Almazuela Picross durante dos días a la expotaku de Irun con un stand propio. ¿Nos vemos allí?",
-          "image": "../img/expotakuIrun2026.png",
+          "image": "../img/expotakuIrun2026.webp",
           "place": "Irun, Guipuzkoa",
           "link": "https://www.expotaku.com/irun/",
           "linkPermanent": false
@@ -31,7 +31,7 @@
           "dateLabel": "2 octubre 2026",
           "title": "Digitalización de elementos culturales para videojuegos",
           "description": "Explicaremos cómo hicimos para digitalizar elementos culturales para un videojuego entendiendo sus limitaciones y realizaremos diseños trabajando sobre las Almazuelas.",
-          "image": "../img/Patrimonio2026.png",
+          "image": "../img/Patrimonio2026.webp",
           "place": "Biblioteca de La Rioja, Logroño",
           "link": "https://blr.larioja.org/actividades/agenda-calendario/almazuela-pycross-videojuego",
           "linkPermanent": false
@@ -40,11 +40,21 @@
           "date": "2026-10-19",
           "dateLabel": "16-18 octubre 2026",
           "title": "Espacio Erveca en el III Festiva Rioja Cómic",
-          "description": "Costura, talleres sobre el impacto del videojuego sobre nosotros y showcase de Almazuela Picross y otros proyectos. \nMás información proximamente.",
-          "image": "../img/riojaComic2026.jpg",
+          "description": "Costura, talleres sobre el impacto del videojuego sobre nosotros y showcase de Almazuela Picross, Erveca: Goddess of the skies, y proyectos de otros estudios como Unclouded y Vareia.",
+          "image": "../img/riojaComic2026.webp",
           "place": "Instituto Riojano de la Juventud, Logroño",
           "link": "events.html?event=0",
           "linkPermanent": true
+        },
+        {
+          "date": "2026-11-12",
+          "dateLabel": "12 noviembre 2026",
+          "title": "Otoño patrimonial 2026",
+          "description": "Hablaremos como traspasar el patrimonio a la era digital a través del videojuego y jugaremos a Almazuela Picross mientras vemos almazuelas originales",
+          "image": "../img/rioxanostra2026.webp",
+          "place": "Café bar Serendipia, Logroño",
+          "link": "",
+          "linkPermanent": false
         }
       ]
     },
@@ -59,7 +69,7 @@
           "dateLabel": "26 mayo 2026",
           "title": "Lanzamiento en Steam y Google Play",
           "description": "Llega el taller digital de almazuelas a PC y Android. ¿Nos ayudas a tejer las 20 almazuelas que las artesanas de Cameros nos han mostrado?",
-          "image": "../img/CapsulaHorizontal.png",
+          "image": "../img/CapsulaHorizontal.webp",
           "link": "",
           "linkPermanent": false
         },
@@ -68,7 +78,7 @@
           "dateLabel": "22 agosto 2026",
           "title": "XIV Fiesta de las Alamzuelas Colgadas",
           "description": "Actualización que incluye otras ocho almazuelas de la Comarca de Cameros y un concurso de diseño de almazuelas ¡para todos los que queráis participar!",
-          "image": "../img/almazuelaPicrossUp01.png",
+          "image": "../img/almazuelaPicrossUp01.webp",
           "link": "",
           "linkPermanent": false
         },
@@ -77,7 +87,7 @@
           "dateLabel": "31 octubre 2026",
           "title": "Actualización de otoño",
           "description": "Cuatro nuevas almazuelas de Villoslada de Cameros y mejoras de accesibilidad para que nadie se quede sin tejer.",
-          "image": "../img/almazuelaPicrossUp02.png",
+          "image": "../img/almazuelaPicrossUp02.webp",
           "link": "",
           "linkPermanent": false
         }
@@ -94,7 +104,7 @@
           "dateLabel": "27-28 diciembre 2025",
           "title": "Demo de misiones",
           "description": "Creación del sistema de eventos y misiones con un primer encargo jugable en que se puede recorrer el mapa creado buscando 5 almazuelas.",
-          "image": "../img/Erveca01.png",
+          "image": "../img/Erveca01.webp",
           "link": "",
           "linkPermanent": false
         },
@@ -103,7 +113,7 @@
           "dateLabel": "7-8 febrero 2026",
           "title": "Corrección de errores y mejoras de ambientación",
           "description": "Adición de nuevos elementos gráficos que mejoran la ambientación y corrección de errores de la demo de misiones.",
-          "image": "../img/Erveca02.png",
+          "image": "../img/Erveca02.webp",
           "link": "",
           "linkPermanent": false
         },
@@ -112,7 +122,24 @@
           "dateLabel": "Primer trimestre 2027",
           "title": "Demo pública en itch.io",
           "description": "Introducción de los sistemas de Almazuela Picross a Erveca añadiendo contenido a la demo existente.",
-          "image": "../img/ervecaGeneric.png",
+          "image": "../img/ervecaGeneric.webp",
+          "link": "",
+          "linkPermanent": false
+        }
+      ]
+    },
+    {
+      "id": "goddess",
+      "label": "Goddess of the skies",
+      "accent": "sage",
+      "intro": "Comenzamos por el final, el videojuego narrativo que empieza contando lo que ocurrió con el valle de Erveca tras el final del título original. No será necesario haber seguido el desarrollo de Erveca para disfrutarlo.",
+      "items": [
+        {
+          "date": "2026-11-30",
+          "dateLabel": "Noviembre 2026",
+          "title": "Página de Steam",
+          "description": "Creación de la página de Steam y primeros pasos para preparar el play test. Durante este mes se irá enseñando el juego en todos los eventos que tengamos. Ver eventos.",
+          "image": "../img/ET_Capsule.webp",
           "link": "",
           "linkPermanent": false
         }

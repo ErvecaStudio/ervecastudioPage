@@ -106,7 +106,7 @@
       img.src = item.image;
       img.alt = '';
       img.loading = 'lazy';
-      img.addEventListener('load', schedulePath);
+      img.decoding = 'async';
       media.appendChild(img);
       if (label) {
         var badge = document.createElement('span');
@@ -307,6 +307,7 @@
   }
 
   function scrollToNext(smooth) {
+    if (nextRow === 0) return;
     var el = itemsEl.querySelector('.rm-item.is-next');
     if (!el) return;
     var y = window.pageYOffset + el.getBoundingClientRect().top - NAV_OFFSET;

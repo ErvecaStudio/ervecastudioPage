@@ -341,6 +341,7 @@ p { opacity: .8; }
   gap: 6rem;
   align-items: center;
 }
+.about + .about { margin-top: 4rem; }
 .about.reverse { grid-template-columns: 1.2fr 1fr; }
 .about.reverse .about-image { order: 2; }
 .about.reverse .about-text { order: 1; }
