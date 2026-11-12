@@ -193,6 +193,59 @@
           ]
         }
       ]
+    },
+    {
+      "id": "artefacto-2026",
+      "name": "Artefacto 2026",
+      "logo": 
+      {
+        "src": "../img/Artefacto2026.png",
+        "alt": "Artefacto 2026",
+        "link": "https://lagota.es/programacion-actual"
+      },
+      "place": 
+      {
+        "name": "Gota de Leche, Logroño",
+        "mapsUrl": "https://maps.app.goo.gl/mSnDYd6S6eLocJ268"
+      },
+      "logos": [
+        {
+          "src": "../img/Logo-Logrono.webp",
+          "alt": "Ayuntamiento de Logroño",
+          "link": "https://logrono.es/"
+        },
+        {
+          "src": "../img/GotaDeLeche.png",
+          "alt": "Gota de Leche",
+          "link": "https://lagota.es/"
+        }
+      ],
+      "days": [
+        {
+          "date": "2026-11-19",
+          "dateLabel": "Jue 19 nov",
+          "activities": [
+            {
+              "type": "talk",
+              "showedType": "Charla",
+              "start": "18:00",
+              "end": "19:15",
+              "title": "El móvil: la consola que ya tienen en el bolsillo",
+              "authors": "Erveca Studio",
+              "description": "Se hablará como los videojuegos se han introducido en nuestra vida a través de los dispositivos móviles y cómo esto ha cambiado la forma de jugar, interactuar con el mundo digital y de crear videojuegos."
+            },
+            {
+              "type": "talk",
+              "showedType": "Taller",
+              "start": "19:30",
+              "end": "21:45",
+              "title": "Crear un videojuego sencillo con un equipo pequeño",
+              "authors": "Erveca Studio",
+              "description": "Taller sobre como crear un videojuego con Unity con un equipo pequeño. Se explicará el proceso, la división de tareas y las herramientas más sencillas con las que poder crear. Además, se dará soporte a todos aquellos que al terminar el taller quieran continuar con el desarrollo de su propio proyecto.\n\nPara el curso se usarán los ordenadores del propio centro, por lo que no es necesario traer ningún dispositivo."
+            }
+          ]
+        }
+      ]
     }
   ]
 }

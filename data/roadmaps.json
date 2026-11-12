@@ -55,6 +55,26 @@
           "place": "Café bar Serendipia, Logroño",
           "link": "",
           "linkPermanent": false
+        },
+        {
+          "date": "2026-11-19",
+          "dateLabel": "19 noviembre 2026",
+          "title": "Artefacto 2026",
+          "description": "Charla sobre cómo los videojuegos se han introducido en nuestra vida a través de los dispositivos móviles y taller sobre como crear un videojuego con Unity con un equipo pequeño.",
+          "image": "../img/Artefacto2026.webp",
+          "place": "La Gota de Leche, Logroño",
+          "link": "events.html?event=1",
+          "linkPermanent": true
+        },
+        {
+          "date": "2026-11-21",
+          "dateLabel": "21 noviembre 2026",
+          "title": "Experiencia riojana en el videojuego",
+          "description": "Quienes somos como estudio de videojuegos, cómo trabajamos y hacía donde nos dirigimos.",
+          "image": "../img/3EncuentroCultura.webp",
+          "place": "Riojaforum, Logroño",
+          "link": "https://www.larioja.org/cultura/es/iii-encuentro-cultura-rioja",
+          "linkPermanent": false
         }
       ]
     },
