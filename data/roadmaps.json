@@ -75,6 +75,16 @@
           "place": "Riojaforum, Logroño",
           "link": "https://www.larioja.org/cultura/es/iii-encuentro-cultura-rioja",
           "linkPermanent": false
+        },
+        {
+          "date": "2026-12-01",
+          "dateLabel": "1 diciembre 2026",
+          "title": "Indie Soul Fest",
+          "description": "Presentamos Almazuela Picross a este evento digital con demos artesanales sin IA generativa de más de 25 estudios.",
+          "image": "../img/SoulFest2026.webp",
+          "place": "Online",
+          "link": "https://www.playnotes.es/events",
+          "linkPermanent": false
         }
       ]
     },
