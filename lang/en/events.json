@@ -1,0 +1,78 @@
+{
+  "meta.title": "Events — Erveca Studio",
+  "meta.desc": "Where to find us: Erveca Studio showcases and talks, day by day.",
+  "meta.keywords": "Erveca Studio, events, fairs, showcase, talks, La Rioja video games",
+  "hero.label": "Events",
+  "hero.title": "Where you'll <em>find us</em>",
+  "days.aria": "Event days",
+  "logos.aria": "Event partners",
+  "ev.talk": "Talk",
+  "ev.tbc": "Time to be confirmed",
+  "ev.count.one": "{n} activity scheduled for this day.",
+  "ev.count.other": "{n} activities scheduled for this day.",
+  "ev.empty": "No activities published yet for this day.",
+  "ev.nodays": "No dates published yet for this event.",
+  "ev.error": "We couldn't load the events. Please reload the page in a moment.",
+  "data": {
+    "events": {
+      "rioja-comic-2026": {
+        "name": "3rd Rioja Comic Festival",
+        "place": "Riojan Youth Institute, Logroño",
+        "days": {
+          "2026-10-16": "Fri 16 Oct",
+          "2026-10-17": "Sat 17 Oct",
+          "2026-10-18": "Sun 18 Oct"
+        }
+      },
+      "artefacto-2026": {
+        "days": { "2026-11-19": "Thu 19 Nov" }
+      }
+    },
+    "alts": {
+      "Gobierno de La Rioja": "Government of La Rioja",
+      "Instituto Riojano de la Juventud": "Riojan Youth Institute",
+      "Ayuntamiento de Logroño": "Logroño City Council"
+    },
+    "activities": {
+      "Almazuela Picross": {
+        "description": "Recreate almazuelas, traditional blankets from the Sierra de Cameros, while solving logic puzzles."
+      },
+      "???": {
+        "description": "Erveca Studio's next video game. It will be presented exclusively at this event. Will you try it?"
+      },
+      "¿Cómo se hace una almazuela?": {
+        "title": "How is an almazuela made?",
+        "showedType": "Workshop",
+        "authors": "Maria del Rosario Ruiz - Artisan",
+        "description": "We'll talk about the textile tradition of Cameros while making a small almazuela using yesterday's and today's methods."
+      },
+      "Más allá de la partida": {
+        "title": "Beyond the game",
+        "showedType": "Workshop",
+        "authors": "Jone Valencia and Lucía Ortega - Psychologists",
+        "description": "In this workshop we'll approach video games from curiosity, enjoyment and care. We'll share experiences, talk about how we can bring play into our lives in a healthy way and discover what happens when we pause, connect with ourselves and play alongside other people. \n\nBeyond the game, there is a whole world to discover."
+      },
+      "Unclouded": {
+        "description": "Unclouded builds on the simplicity of Minesweeper with resource-management mechanics to create an engaging, replayable, fresh and familiar single-player experience."
+      },
+      "Cultura 3.0": {
+        "showedType": "Talk",
+        "authors": "Samuel Noval - Developer",
+        "description": "How to turn the culture of one's surroundings into a distinctive trait within an artistic project, sharing it with the world and reinforcing its value in the face of new forms of automated creation."
+      },
+      "Ludovareia": {
+        "description": "The Roman city of Vareia has a lot of history. You can get to know it through puzzles and minigames. You learn history while you play and have fun."
+      },
+      "El móvil: la consola que ya tienen en el bolsillo": {
+        "title": "The phone: the console they already have in their pocket",
+        "showedType": "Talk",
+        "description": "We'll talk about how video games have entered our lives through mobile devices and how this has changed the way we play, interact with the digital world and create games."
+      },
+      "Crear un videojuego sencillo con un equipo pequeño": {
+        "title": "Creating a simple video game with a small team",
+        "showedType": "Workshop",
+        "description": "Workshop on how to create a game with Unity in a small team. We'll explain the process, the division of tasks and the simplest tools to create with. Support will also be given to anyone who wants to keep developing their own project after the workshop.\n\nThe centre's own computers will be used for the course, so there is no need to bring any device. No prior knowledge of programming, design or development is needed."
+      }
+    }
+  }
+}

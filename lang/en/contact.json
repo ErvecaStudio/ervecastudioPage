@@ -1,0 +1,21 @@
+{
+  "meta.title": "Contact — Erveca Studio",
+  "meta.desc": "Get in touch with Erveca Studio: social media, email and contact form.",
+  "hero.label": "Let's talk",
+  "hero.title": "We read you <em>from Pradillo</em>",
+  "hero.lead": "Do you have a question, a collaboration proposal or just want to say hi? Write to us by email, on social media or through the form.",
+  "links.label": "Other ways",
+  "links.title": "Find us <em>here</em>",
+  "links.text": "We follow the development of our games almost daily on social media, where we share progress, screenshots and news about our titles and Cameros.",
+  "form.label": "Form",
+  "form.title": "Write to us <em>directly</em>",
+  "form.name": "Name",
+  "form.email": "Email address",
+  "form.message": "Message",
+  "form.send": "Send message",
+  "form.err.empty": "Please fill in all the fields.",
+  "form.err.email": "Enter a valid email address.",
+  "form.err.mail": "We couldn't open your email client automatically.",
+  "form.manual": "You can write to us manually at:",
+  "form.ok": "Check your email client."
+}

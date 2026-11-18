@@ -6,6 +6,6 @@
   "publisher": "Erveca Studio",
   "url": "https://ervecastudio.es/pages/games.html",
   "genre": "Puzzle, Cozy",
-  "gamePlatform": "PC",
-  "description": "Videojuego inspirado en las almazuelas tradicionales de La Rioja."
+  "gamePlatform": ["PC", "Android"],
+  "description": "Jeu vidéo inspiré des almazuelas traditionnelles de La Rioja."
 }

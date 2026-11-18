@@ -24,6 +24,21 @@
   var loadMoreBtn = document.getElementById('rm-load-more');
   var scrollTopBtn = document.getElementById('rm-scroll-top');
 
+  function localize(list) {
+    var d = (i18n.raw('data') || {}).tracks || {};
+    return list.map(function (track) {
+      var o = d[track.id] || {};
+      var items = (track.items || []).map(function (item) {
+        return Object.assign({}, item, (o.items || {})[item.date]);
+      });
+      return Object.assign({}, track, {
+        label: o.label || track.label,
+        intro: o.intro || track.intro,
+        items: items
+      });
+    });
+  }
+
   function hash(str) {
     var h = 2166136261;
     for (var i = 0; i < str.length; i++) {
@@ -147,7 +162,7 @@
     if (hasLink) {
       var link = document.createElement('span');
       link.className = 'card-link';
-      link.textContent = 'Más información →';
+      link.textContent = i18n.t('ui.more');
       body.appendChild(link);
     }
 
@@ -191,8 +206,8 @@
     if (introEl) introEl.textContent = track.intro || '';
     if (statusEl) {
       statusEl.textContent = total
-        ? 'De abajo arriba: ' + total + ' paradas de ' + track.label + '.'
-        : 'Todavía no hay fechas publicadas para ' + track.label + '.';
+        ? i18n.t('roadmap.status', { n: total, label: track.label })
+        : i18n.t('roadmap.empty', { label: track.label });
     }
 
     if (loadMoreBtn) loadMoreBtn.hidden = total <= VISIBLE_COUNT;
@@ -347,20 +362,22 @@
     });
   }
 
-  fetch(DATA_URL)
-    .then(function (r) {
-      if (!r.ok) throw new Error(r.status);
-      return r.json();
-    })
-    .then(function (json) {
-      tracks = (json && json.tracks) || [];
+  Promise.all([
+      fetch(DATA_URL).then(function (r) {
+        if (!r.ok) throw new Error(r.status);
+        return r.json();
+      }),
+      i18n.ready
+    ])
+    .then(function (res) {
+      tracks = localize((res[0] && res[0].tracks) || []);
       if (!tracks.length) throw new Error('sin datos');
       renderTabs();
       var fromHash = (location.hash || '').replace('#', '');
       selectTrack(fromHash || tracks[0].id, !!fromHash);
     })
     .catch(function () {
-      if (statusEl) statusEl.textContent = 'No hemos podido cargar las fechas. Recarga la página en un momento.';
+      if (statusEl) statusEl.textContent = i18n.t('roadmap.error');
     });
 
   var resizeTimer = 0;

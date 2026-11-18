@@ -1,0 +1,21 @@
+{
+  "meta.title": "Contact — Erveca Studio",
+  "meta.desc": "Contactez Erveca Studio : réseaux sociaux, e-mail et formulaire de contact.",
+  "hero.label": "Parlons-en",
+  "hero.title": "Nous vous lisons <em>depuis Pradillo</em>",
+  "hero.lead": "Vous avez une question, une proposition de collaboration ou vous voulez simplement nous dire bonjour ? Écrivez-nous par e-mail, sur les réseaux sociaux ou via le formulaire.",
+  "links.label": "Autres moyens",
+  "links.title": "Retrouvez-nous <em>ici</em>",
+  "links.text": "Nous suivons le développement de nos jeux presque tous les jours sur les réseaux sociaux, où nous partageons avancées, captures d'écran et nouvelles sur nos titres et sur Cameros.",
+  "form.label": "Formulaire",
+  "form.title": "Écrivez-nous <em>directement</em>",
+  "form.name": "Nom",
+  "form.email": "Adresse e-mail",
+  "form.message": "Message",
+  "form.send": "Envoyer le message",
+  "form.err.empty": "Veuillez remplir tous les champs.",
+  "form.err.email": "Saisissez une adresse e-mail valide.",
+  "form.err.mail": "Impossible d'ouvrir automatiquement votre client de messagerie.",
+  "form.manual": "Vous pouvez nous écrire directement à :",
+  "form.ok": "Vérifiez votre client de messagerie."
+}

@@ -1,86 +1,83 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-page="games">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="color-scheme" content="light">
   <title>Videojuegos — Erveca Studio</title>
-  <meta name="description" content="Almazuela Picross y Erveca: los videojuegos de Erveca Studio, inspirados en la cultura, el paisaje y la artesanía de La Rioja." />
+  <meta name="description" data-i18n-attr="content:meta.desc" content="Almazuela Picross y Erveca: los videojuegos de Erveca Studio, inspirados en la cultura, el paisaje y la artesanía de La Rioja." />
   <link rel="icon" type="image/png" href="../img/Favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/styles.css" />
+  <script src="/js/i18n.js"></script>
   <script src="/js/schema-loader.js"></script>
 </head>
 <body>
 
-  <!-- NAV -->
   <nav>
     <a href="../index.html" class="nav-logo">
       <img src="../img/Imagotipo.png" alt="Erveca Studio" />
     </a>
-    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+    <button class="nav-toggle" data-i18n-attr="aria-label:nav.toggle" aria-label="Abrir menú" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links">
-      <li><a href="../index.html">Inicio</a></li>
-      <li><a href="philosophy.html">Filosofía</a></li>
-      <li><a href="games.html" class="active">Videojuegos</a></li>
-      <li><a href="soon.html">Próximamente</a></li>
-      <li><a href="team.html">Quiénes somos</a></li>
-      <li><a href="contact.html">Contacto</a></li>
-      <li><a href="support.html">Apóyanos</a></li>
+      <li><a href="../index.html" data-i18n="nav.home">Inicio</a></li>
+      <li><a href="philosophy.html" data-i18n="nav.philosophy">Filosofía</a></li>
+      <li><a href="games.html" class="active" data-i18n="nav.games">Videojuegos</a></li>
+      <li><a href="soon.html" data-i18n="nav.soon">Próximamente</a></li>
+      <li><a href="team.html" data-i18n="nav.team">Quiénes somos</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Contacto</a></li>
+      <li><a href="support.html" data-i18n="nav.support">Apóyanos</a></li>
     </ul>
   </nav>
 
-  <!-- PAGE HERO -->
   <div class="page-hero">
-    <p class="section-label fade-up">Nuestros títulos</p>
-    <h1 class="fade-up d1">Tres juegos, <em>una misma raíz</em></h1>
-    <p class="lead fade-up d2">
-      Erveca, nuestro proyecto matriz, Goddess of the skies y Almazuela Picross, juegos creados entorno a la forma de jugar del primero y el mismo territorio: Cameros, La Rioja.
+    <p class="section-label fade-up" data-i18n="games.label">Nuestros títulos</p>
+    <h1 class="fade-up d1" data-i18n-html="games.title">Tres juegos, <em>una misma raíz</em></h1>
+    <p class="lead fade-up d2" data-i18n="games.lead">
+      Erveca, nuestro proyecto matriz, Goddess of the skies y Almazuela Picross, juegos creados en torno a la forma de jugar del primero y el mismo territorio: Cameros, La Rioja.
     </p>
   </div>
 
-  <!-- GODDESS OF THE SKIES -->
-<section id="goddess-of-the-skies">
-  <div class="section-inner about">
-    <div class="about-image fade-up">
-      <div class="about-image-inner">
-        <img src="../img/ET_00Island.png" alt="Captura de pantalla de Goddess of the Skies" loading="lazy" />
-      </div>
-      <div class="about-deco"></div>
-    </div>
-    <div class="about-text">
-      <p class="section-label fade-up">Próximamente</p>
-      <h2 class="fade-up d1"><em>Erveca</em> Goddess of the Skies</h2>
-      <p class="fade-up d2">
-        Nuestro próximo título, donde mantenemos la tranquilidad y la cultura. Explorarás islas inspiradas en la arquitectura de los pueblos de Cameros y resolverás puzles lógicos usando el entorno.
-      </p>
-      <p class="fade-up d2">
-        Incluirá 20 islas iniciales con puzles que se resuelven con cuatro habilidades cedidas por las diosas de Erveca, además de 4 puzles basados en la búsqueda de azulejos. También habrá un campamento que podrás decorar con los tesoros que encuentra Silvia, la protagonista, inspirados en la cultura tradicional y popular riojana.
-      </p>
-    </div>
-  </div>
-</section>
-
-  <!-- ALMAZUELA PICROSS -->
-<section class="games">
-  <div class="section-inner about reverse">
+  <section id="goddess-of-the-skies">
+    <div class="section-inner about">
       <div class="about-image fade-up">
         <div class="about-image-inner">
-          <img src="../img/Picross03.png" alt="Captura de pantalla de Almazuela Picross" loading="lazy" />
+          <img src="../img/ET_00Island.png" data-i18n-attr="alt:games.goddess.alt" alt="Captura de pantalla de Goddess of the Skies" loading="lazy" />
         </div>
         <div class="about-deco"></div>
       </div>
       <div class="about-text">
-        <p class="section-label fade-up">Disponible ahora</p>
+        <p class="section-label fade-up" data-i18n="games.goddess.label">Próximamente</p>
+        <h2 class="fade-up d1"><em>Erveca</em> Goddess of the Skies</h2>
+        <p class="fade-up d2" data-i18n="games.goddess.p1">
+          Nuestro próximo título, donde mantenemos la tranquilidad y la cultura. Explorarás islas inspiradas en la arquitectura de los pueblos de Cameros y resolverás puzles lógicos usando el entorno.
+        </p>
+        <p class="fade-up d2" data-i18n="games.goddess.p2">
+          Incluirá 20 islas iniciales con puzles que se resuelven con cuatro habilidades cedidas por las diosas de Erveca, además de 4 puzles basados en la búsqueda de azulejos. También habrá un campamento que podrás decorar con los tesoros que encuentra Silvia, la protagonista, inspirados en la cultura tradicional y popular riojana.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="games">
+    <div class="section-inner about reverse">
+      <div class="about-image fade-up">
+        <div class="about-image-inner">
+          <img src="../img/Picross03.png" data-i18n-attr="alt:games.picross.alt" alt="Captura de pantalla de Almazuela Picross" loading="lazy" />
+        </div>
+        <div class="about-deco"></div>
+      </div>
+      <div class="about-text">
+        <p class="section-label fade-up" data-i18n="games.picross.label">Disponible ahora</p>
         <h2 class="fade-up d1">Almazuela <em>Picross</em></h2>
-        <p class="fade-up d2">
+        <p class="fade-up d2" data-i18n="games.picross.p1">
           Un videojuego "cozy" de nonogramas inspirado en la tradición textil de La Rioja. Resuelve picross para desbloquear retales y, al completarlos todos, júntalos en una almazuela completa: una pieza textil tradicional hecha de retales unidos.
         </p>
-        <p class="fade-up d2">
+        <p class="fade-up d2" data-i18n="games.picross.p2">
           El juego incluye 31 almazuelas reales cedidas por las artesanas de la Fiesta de la Almazuela de Pradillo, además de una almazuela especial diseñada por la comunidad de fans del estudio. 32 niveles, cada uno con varios nonogramas y un puzle adicional, en una estética vectorial pensada para partidas relajadas, sin presión de tiempo.
         </p>
         <div class="card-links fade-up d3" style="margin-top: 1.5rem;">
@@ -91,79 +88,77 @@
     </div>
   </section>
 
-  <!-- ERVECA RPG -->
   <section>
     <div class="section-inner about">
       <div class="about-image fade-up">
         <div class="about-image-inner">
-          <img src="../img/Erveca02.png" alt="Captura de pantalla del videojuego Erveca" loading="lazy" />
+          <img src="../img/Erveca02.png" data-i18n-attr="alt:games.erveca.alt" alt="Captura de pantalla del videojuego Erveca" loading="lazy" />
         </div>
         <div class="about-deco"></div>
       </div>
       <div class="about-text">
-        <p class="section-label fade-up">En desarrollo · itch.io</p>
+        <p class="section-label fade-up" data-i18n="games.erveca.label">En desarrollo · itch.io</p>
         <h2 class="fade-up d1"><em>Erveca</em></h2>
-        <p class="fade-up d2">
+        <p class="fade-up d2" data-i18n="games.erveca.p1">
           Nuestro proyecto matriz: un juego de rol y aventura con estética fantástica medieval ambientado en la comarca de Cameros, La Rioja. El juego recorre pueblos reales de la zona —Pradillo, Ortigosa, El Rasillo— reinventando el modo de conectar a la juventud con el medio rural.
         </p>
-        <p class="fade-up d2">
+        <p class="fade-up d2" data-i18n="games.erveca.p2">
           Erveca cuenta con el apoyo de la Consejería de Cultura del Gobierno de La Rioja y está disponible para seguir su desarrollo en itch.io. Los nonogramas que después dieron lugar a Almazuela Picross surgieron originalmente como minijuegos dentro de este proyecto.
         </p>
         <div class="card-links fade-up d3" style="margin-top: 1.5rem;">
-          <a href="https://erveca.itch.io/erveca" target="_blank" rel="noopener" class="card-link">Ver en itch.io →</a>
+          <a href="https://erveca.itch.io/erveca" target="_blank" rel="noopener" class="card-link" data-i18n="games.erveca.link">Ver en itch.io →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- GALERÍA -->
   <section>
     <div class="section-inner">
-      <p class="section-label fade-up">Galería</p>
-      <h2 class="fade-up d1">Capturas y avances</h2>
+      <p class="section-label fade-up" data-i18n="games.gallery.label">Galería</p>
+      <h2 class="fade-up d1" data-i18n="games.gallery.title">Capturas y avances</h2>
       <div class="games-grid three">
 
         <div class="game-card fade-up d3">
           <div class="card-img">
-            <img src="../img/ET_00Wand.png" alt="Silvia consiguiendo el bastón de Cibeles en Goddess of the skies" loading="lazy" />
+            <img src="../img/ET_00Wand.png" data-i18n-attr="alt:games.g1.alt" alt="Silvia consiguiendo el bastón de Cibeles en Goddess of the skies" loading="lazy" />
             <span class="card-badge rust">Goddess of the skies</span>
           </div>
           <div class="card-body">
-            <h3>Bastón de Cibeles</h3>
-            <p>El bastón de la Diosa de la tierra, Cibeles, que permitirá a Silvia mover bloques de roca.</p>
+            <h3 data-i18n="games.g1.title">Bastón de Cibeles</h3>
+            <p data-i18n="games.g1.desc">El bastón de la Diosa de la tierra, Cibeles, que permitirá a Silvia mover bloques de roca.</p>
           </div>
         </div>
 
         <a href="https://play.google.com/store/apps/details?id=com.ervecastudio.almazuelapicross" target="_blank" rel="noopener" class="game-card fade-up d2">
           <div class="card-img">
-            <img src="../img/Picross05.png" alt="Tablero de nonogramas de Almazuela Picross" loading="lazy" />
+            <img src="../img/Picross05.png" data-i18n-attr="alt:games.g2.alt" alt="Tablero de nonogramas de Almazuela Picross" loading="lazy" />
             <span class="card-badge gold">Almazuela Picross</span>
           </div>
           <div class="card-body">
-            <h3>Resolviendo nonogramas</h3>
-            <p>El tablero de picross donde se desbloquean los retales de cada almazuela.</p>
+            <h3 data-i18n="games.g2.title">Resolviendo nonogramas</h3>
+            <p data-i18n="games.g2.desc">El tablero de picross donde se desbloquean los retales de cada almazuela.</p>
           </div>
         </a>
 
         <a href="https://play.google.com/store/apps/details?id=com.ervecastudio.almazuelapicross" target="_blank" rel="noopener" class="game-card fade-up d3">
           <div class="card-img">
-            <img src="../img/17_GALERIA.png" alt="Almazuela completa ensamblada en Almazuela Picross" loading="lazy" />
+            <img src="../img/17_GALERIA.png" data-i18n-attr="alt:games.g3.alt" alt="Almazuela completa ensamblada en Almazuela Picross" loading="lazy" />
             <span class="card-badge gold">Almazuela Picross</span>
           </div>
           <div class="card-body">
-            <h3>Almazuela ensamblada</h3>
-            <p>Una de las 31 almazuelas reales, cedida por artesanas de Pradillo.</p>
+            <h3 data-i18n="games.g3.title">Almazuela ensamblada</h3>
+            <p data-i18n="games.g3.desc">Una de las 31 almazuelas reales, cedida por artesanas de Pradillo.</p>
           </div>
         </a>
 
         <a href="https://erveca.itch.io/erveca" target="_blank" rel="noopener" class="game-card fade-up d4">
           <div class="card-img">
-            <img src="../img/Erveca03.png" alt="Escena de exploración en Erveca" loading="lazy" />
+            <img src="../img/Erveca03.png" data-i18n-attr="alt:games.g4.alt" alt="Escena de exploración en Erveca" loading="lazy" />
             <span class="card-badge sage">Erveca</span>
           </div>
           <div class="card-body">
-            <h3>Explorando Cameros</h3>
-            <p>Pradillo, uno de los pueblos de la sierra recreados en Erveca.</p>
+            <h3 data-i18n="games.g4.title">Explorando Cameros</h3>
+            <p data-i18n="games.g4.desc">Pradillo, uno de los pueblos de la sierra recreados en Erveca.</p>
           </div>
         </a>
 
@@ -171,7 +166,6 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <div class="footer-brand">
       <img src="../img/LogotipoB.png" alt="" />
@@ -182,7 +176,7 @@
       <li><a href="https://www.facebook.com/ErvecaRPG" target="_blank" rel="noopener">Facebook</a></li>
       <li><a href="https://www.youtube.com/@ErvecaStudio" target="_blank" rel="noopener">YouTube</a></li>
     </ul>
-    <p class="footer-copy">© 2024–2026 Erveca Studio · Pradillo, La Rioja, España</p>
+    <p class="footer-copy" data-i18n="footer.copy">© 2024–2026 Erveca Studio · Pradillo, La Rioja, España</p>
   </footer>
 
   <script src="../js/main.js"></script>

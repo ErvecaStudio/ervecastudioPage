@@ -50,12 +50,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
       if (!name.value.trim() || !email.value.trim() || !message.value.trim()) {
-        showStatus('Por favor, completa todos los campos.', 'err');
+        showStatus(i18n.t('form.err.empty'), 'err');
         return;
       }
 
       if (!emailPattern.test(email.value.trim())) {
-        showStatus('Introduce un correo electrónico válido.', 'err');
+        showStatus(i18n.t('form.err.mail'), 'err');
         return;
       }
 
@@ -67,17 +67,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
       setTimeout(() => {
         if (!mailWindow || mailWindow.closed || typeof mailWindow.closed === 'undefined') {
-          showStatus('No se pudo abrir el cliente de correo automáticamente.', 'err');
+          showStatus(i18n.t('form.err.mail'), 'err');
           
           const fallbackMsg = document.createElement('div');
           fallbackMsg.innerHTML = `
             <p style="margin-top:8px;font-size:14px;">
-              Puedes escribir manualmente a: <strong>juegoerveca@gmail.com</strong>
+              ${i18n.t('form.manual')} <strong>juegoerveca@gmail.com</strong>
             </p>
           `;
           status.appendChild(fallbackMsg);
         } else {
-          showStatus('Revisa tu cliente de correo.', 'ok');
+          showStatus(i18n.t('form.ok'), 'ok');
           form.reset();
           mailWindow.close(); 
         }

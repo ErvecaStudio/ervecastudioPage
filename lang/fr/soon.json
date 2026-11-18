@@ -1,0 +1,117 @@
+{
+  "meta.title": "Prochainement — Erveca Studio",
+  "meta.desc": "Feuille de route d'Erveca Studio : événements, salons et développement d'Almazuela Picross, d'Erveca et de notre nouveau jeu de puzzle.",
+  "meta.keywords": "Erveca Studio, feuille de route, prochainement, événements jeux vidéo La Rioja, Almazuela Picross, Erveca RPG",
+  "hero.label": "Prochainement",
+  "hero.title": "Où nous en <em>sommes</em>",
+  "hero.lead": "Ici, nous vous racontons sur quoi nous travaillons et où nous retrouver. Chaque chemin se lit de bas en haut : en bas, ce qui est déjà parcouru ; en haut, ce qui reste à venir. À l'ouverture, nous vous plaçons directement à la prochaine étape.",
+  "tabs.aria": "Feuilles de route",
+  "roadmap.more": "Charger plus",
+  "roadmap.top": "Haut de page ↑",
+  "roadmap.loading": "Chargement de la feuille de route…",
+  "roadmap.status": "De bas en haut : {n} étapes pour {label}.",
+  "roadmap.empty": "Aucune date publiée pour le moment pour {label}.",
+  "roadmap.error": "Impossible de charger les dates. Rechargez la page dans un instant.",
+  "data": {
+    "tracks": {
+      "eventos": {
+        "label": "Événements",
+        "intro": "Salons, ateliers et rencontres où nous serons présents, avec Cameros en tête.",
+        "items": {
+          "2026-09-12": {
+            "dateLabel": "12-13 septembre 2026",
+            "description": "Nous présentons Almazuela Picross à Saragosse pour la première fois lors d'un événement riche en conférences et en démos de jeux indépendants.",
+            "place": "Saragosse"
+          },
+          "2026-09-21": {
+            "dateLabel": "19-20 septembre 2026",
+            "description": "Nous emmenons Almazuela Picross pendant deux jours à l'expotaku d'Irun avec notre propre stand. On s'y retrouve ?",
+            "place": "Irun, Gipuzkoa"
+          },
+          "2026-10-03": {
+            "dateLabel": "2 octobre 2026",
+            "title": "Numérisation d'éléments culturels pour les jeux vidéo",
+            "description": "Nous expliquerons comment nous avons numérisé des éléments culturels pour un jeu vidéo en comprenant ses limites, et nous réaliserons des dessins en travaillant sur les almazuelas.",
+            "place": "Bibliothèque de La Rioja, Logroño"
+          },
+          "2026-10-19": {
+            "dateLabel": "16-18 octobre 2026",
+            "title": "Espace Erveca au 3e Festival Rioja Comic",
+            "description": "Couture, ateliers sur l'impact du jeu vidéo sur nous et showcase d'Almazuela Picross, d'Erveca: Goddess of the skies et de projets d'autres studios comme Unclouded et Vareia.",
+            "place": "Institut riojan de la jeunesse, Logroño"
+          },
+          "2026-11-12": {
+            "dateLabel": "12 novembre 2026",
+            "title": "Automne patrimonial 2026",
+            "description": "Nous parlerons de la façon de faire passer le patrimoine à l'ère numérique grâce au jeu vidéo et nous jouerons à Almazuela Picross tout en découvrant des almazuelas originales.",
+            "place": "Café-bar Serendipia, Logroño"
+          },
+          "2026-11-19": {
+            "dateLabel": "19 novembre 2026",
+            "description": "Conférence sur la manière dont les jeux vidéo se sont introduits dans nos vies via les appareils mobiles et atelier sur la création d'un jeu vidéo avec Unity au sein d'une petite équipe."
+          },
+          "2026-11-21": {
+            "dateLabel": "21 novembre 2026",
+            "title": "3e Rencontre de la culture de La Rioja",
+            "description": "Qui nous sommes en tant que studio de jeux vidéo, comment nous travaillons et vers où nous allons."
+          },
+          "2026-12-01": {
+            "dateLabel": "1er décembre 2026",
+            "description": "Nous présentons Almazuela Picross à cet événement numérique avec des démos artisanales, sans IA générative, de plus de 25 studios.",
+            "place": "En ligne"
+          }
+        }
+      },
+      "almazuela-picross": {
+        "intro": "Notre puzzle de nonogrammes (picross) sur Steam et Google Play continue de grandir avec de nouveaux morceaux de tissu. Nous aiderez-vous à tisser une almazuela ?",
+        "items": {
+          "2026-05-26": {
+            "dateLabel": "26 mai 2026",
+            "title": "Lancement sur Steam et Google Play",
+            "description": "L'atelier numérique d'almazuelas arrive sur PC et Android. Nous aiderez-vous à tisser les 20 almazuelas que les artisanes de Cameros nous ont montrées ?"
+          },
+          "2026-08-22": {
+            "dateLabel": "22 août 2026",
+            "title": "XIVe Fête des Almazuelas suspendues",
+            "description": "Mise à jour qui ajoute huit autres almazuelas de la comarque de Cameros et un concours de création d'almazuelas pour tous ceux qui veulent participer !"
+          },
+          "2026-11-01": {
+            "dateLabel": "31 octobre 2026",
+            "title": "Mise à jour d'automne",
+            "description": "Quatre nouvelles almazuelas de Villoslada de Cameros et des améliorations d'accessibilité pour que personne ne reste sans tisser."
+          }
+        }
+      },
+      "erveca": {
+        "intro": "Le RPG d'aventure situé dans les Treize Villages de Camero Nuevo, où la fantasy se mêle aux traditions et aux légendes de ses villages : notre projet phare.",
+        "items": {
+          "2025-12-27": {
+            "dateLabel": "27-28 décembre 2025",
+            "title": "Démo de quêtes",
+            "description": "Création du système d'événements et de quêtes avec une première mission jouable où l'on parcourt la carte à la recherche de 5 almazuelas."
+          },
+          "2026-02-07": {
+            "dateLabel": "7-8 février 2026",
+            "title": "Corrections de bugs et améliorations d'ambiance",
+            "description": "Ajout de nouveaux éléments graphiques qui améliorent l'ambiance et correction des bugs de la démo de quêtes."
+          },
+          "2027-03-07": {
+            "dateLabel": "Premier trimestre 2027",
+            "title": "Démo publique sur itch.io",
+            "description": "Intégration des systèmes d'Almazuela Picross dans Erveca, avec du contenu ajouté à la démo existante."
+          }
+        }
+      },
+      "goddess": {
+        "intro": "Nous commençons par la fin : le jeu narratif qui raconte d'abord ce qu'il est advenu de la vallée d'Erveca après la fin du titre original. Il n'est pas nécessaire d'avoir suivi le développement d'Erveca pour l'apprécier.",
+        "items": {
+          "2026-11-30": {
+            "dateLabel": "Novembre 2026",
+            "title": "Page Steam",
+            "description": "Création de la page Steam et premiers pas pour préparer le playtest. Ce mois-ci, le jeu sera présenté à tous nos événements. Voir les événements."
+          }
+        }
+      }
+    }
+  }
+}

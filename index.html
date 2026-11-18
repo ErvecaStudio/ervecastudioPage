@@ -1,101 +1,99 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-page="home">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="color-scheme" content="light">
-  <title>Erveca Studio — Videojuegos Indie desde La Rioja</title>
-  <meta name="description" content="Erveca Studio es un estudio indie de videojuegos ubicado en Cameros, La Rioja. Creadores de Almazuela Picross y del RPG Erveca, inspirados en la cultura rural riojana." />
-  <meta name="keywords" content="videojuegos La Rioja, videojuegos Cameros, estudio indie España, videojuegos rurales, cultura riojana, almazuelas, Erveca Studio, Almazuela Picross" />
+  <script src="/js/i18n.js"></script>
+  <meta name="description" data-i18n-attr="content:meta.desc" content="Erveca Studio es un estudio indie de videojuegos ubicado en Cameros, La Rioja. Creadores de Almazuela Picross y del RPG Erveca, inspirados en la cultura rural riojana." />
+  <meta name="keywords" data-i18n-attr="content:meta.keywords" content="videojuegos La Rioja, videojuegos Cameros, estudio indie España, videojuegos rurales, cultura riojana, almazuelas, Erveca Studio, Almazuela Picross" />
   <link rel="icon" type="image/png" href="img/Favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="/js/i18n.js"></script>
   <script src="/js/schema-loader.js"></script>
 </head>
 <body>
 
-  <!-- NAV -->
   <nav>
     <a href="index.html" class="nav-logo">
       <img src="img/Imagotipo.png" alt="Erveca Studio" />
     </a>
-    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+    <button class="nav-toggle" data-i18n-attr="aria-label:nav.toggle" aria-label="Abrir menú" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links">
-      <li><a href="index.html" class="active">Inicio</a></li>
-      <li><a href="pages/philosophy.html">Filosofía</a></li>
-      <li><a href="pages/games.html">Videojuegos</a></li>
-      <li><a href="pages/soon.html">Próximamente</a></li>
-      <li><a href="pages/team.html">Quiénes somos</a></li>
-      <li><a href="pages/contact.html">Contacto</a></li>
-      <li><a href="pages/support.html">Apóyanos</a></li>
+      <li><a href="index.html" class="active" data-i18n="nav.home">Inicio</a></li>
+      <li><a href="pages/philosophy.html" data-i18n="nav.philosophy">Filosofía</a></li>
+      <li><a href="pages/games.html" data-i18n="nav.games">Videojuegos</a></li>
+      <li><a href="pages/soon.html" data-i18n="nav.soon">Próximamente</a></li>
+      <li><a href="pages/team.html" data-i18n="nav.team">Quiénes somos</a></li>
+      <li><a href="pages/contact.html" data-i18n="nav.contact">Contacto</a></li>
+      <li><a href="pages/support.html" data-i18n="nav.support">Apóyanos</a></li>
     </ul>
   </nav>
 
-  <!-- HERO -->
   <div class="hero">
     <div class="hero-text">
-      <p class="hero-eyebrow fade-up">Estudio indie — Pradillo, La Rioja</p>
-      <h1 class="fade-up d1">Juegos con<br /><em>alma riojana</em></h1>
-      <p class="hero-desc fade-up d2">
+      <p class="hero-eyebrow fade-up" data-i18n="hero.eyebrow">Estudio indie — Pradillo, La Rioja</p>
+      <h1 class="fade-up d1" data-i18n-html="hero.title">Juegos con<br /><em>alma riojana</em></h1>
+      <p class="hero-desc fade-up d2" data-i18n="hero.desc">
         Somos Erveca Studio, un pequeño estudio de videojuegos indie con sede en Pradillo, en la sierra de Cameros. Creamos experiencias que nacen del territorio, la tradición y la identidad de nuestra región.
       </p>
       <div class="btn-group fade-up d3">
         <a href="https://play.google.com/store/apps/details?id=com.ervecastudio.almazuelapicross" target="_blank" rel="noopener" class="btn btn-secondary">Google Play ↗</a>
         <a href="https://store.steampowered.com/app/4539810/Almazuela_Picross" target="_blank" rel="noopener" class="btn btn-secondary">Steam ↗</a>
-        <a href="pages/games.html" class="btn btn-primary">Ver nuestros juegos</a>
+        <a href="pages/games.html" class="btn btn-primary" data-i18n="hero.btn">Ver nuestros juegos</a>
       </div>
     </div>
 
     <div class="hero-visual fade-up d2">
       <canvas id="hero-canvas" data-logo="img/Isotipo.png" aria-hidden="true"></canvas>
-      <span class="hero-visual-caption">Retales de almazuela</span>
+      <span class="hero-visual-caption" data-i18n="hero.caption">Retales de almazuela</span>
     </div>
   </div>
 
-  <!-- JUEGOS -->
   <section class="games" id="juegos">
     <div class="section-inner">
-      <p class="section-label fade-up">Nuestros títulos</p>
-      <h2 class="fade-up d1">Lo que estamos creando</h2>
+      <p class="section-label fade-up" data-i18n="games.label">Nuestros títulos</p>
+      <h2 class="fade-up d1" data-i18n="games.title">Lo que estamos creando</h2>
       <div class="games-grid">
 
         <a href="pages/games.html#goddess-of-the-skies" class="game-card fade-up d2">
           <div class="card-img">
-            <img src="img/ET_Capsule.png" alt="Cápsula de Erveca: Goddess of the skies" loading="lazy" />
-            <span class="card-badge">Próximamente</span>
+            <img src="img/ET_Capsule.png" data-i18n-attr="alt:goddess.alt" alt="Cápsula de Erveca: Goddess of the skies" loading="lazy" />
+            <span class="card-badge" data-i18n="goddess.badge">Próximamente</span>
           </div>
           <div class="card-body">
             <h3>Erveca: Goddess of the skies</h3>
-            <p>Explora las islas que una vez fueron el valle de Erveca usando la magia ancestral de las Diosas y recuperando los azulejos de Pradillo, un pueblo del antiguo Condado de Nieva.</p>
-            <span class="card-link">Más información →</span>
+            <p data-i18n="goddess.desc">Explora las islas que una vez fueron el valle de Erveca usando la magia ancestral de las Diosas y recuperando los azulejos de Pradillo, un pueblo del antiguo Condado de Nieva.</p>
+            <span class="card-link" data-i18n="goddess.link">Más información →</span>
           </div>
         </a>
 
         <a href="https://play.google.com/store/apps/details?id=com.ervecastudio.almazuelapicross" target="_blank" rel="noopener" class="game-card fade-up d2">
           <div class="card-img">
-            <img src="img/CapsulaHorizontal.png" alt="Captura de Almazuela Picross" loading="lazy" />
+            <img src="img/CapsulaHorizontal.png" data-i18n-attr="alt:picross.alt" alt="Captura de Almazuela Picross" loading="lazy" />
             <span class="card-badge">Steam · Google Play</span>
           </div>
           <div class="card-body">
             <h3>Almazuela Picross</h3>
-            <p>Un videojueg "cozy" de nonogramas inspirado en la tradición textil de La Rioja. Resuelve picross para desbloquear retales y ensambla almazuelas reales cedidas por artesanas de Pradillo.</p>
-            <span class="card-link">Descubrir el juego →</span>
+            <p data-i18n="picross.desc">Un videojuego "cozy" de nonogramas inspirado en la tradición textil de La Rioja. Resuelve picross para desbloquear retales y ensambla almazuelas reales cedidas por artesanas de Pradillo.</p>
+            <span class="card-link" data-i18n="picross.link">Descubrir el juego →</span>
           </div>
         </a>
 
         <a href="https://erveca.itch.io/erveca" target="_blank" rel="noopener" class="game-card fade-up d3">
           <div class="card-img">
-            <img src="img/Erveca01.png" alt="Captura de Erveca" loading="lazy" />
-            <span class="card-badge sage">En desarrollo · itch.io</span>
+            <img src="img/Erveca01.png" data-i18n-attr="alt:erveca.alt" alt="Captura de Erveca" loading="lazy" />
+            <span class="card-badge sage" data-i18n="erveca.badge">En desarrollo · itch.io</span>
           </div>
           <div class="card-body">
             <h3>Erveca</h3>
-            <p>Nuestro proyecto matriz: un RPG de aventura con estética fantástica medieval ambientado en la comarca de Cameros, La Rioja, con apoyo del Gobierno de La Rioja.</p>
-            <span class="card-link">Ver en itch.io →</span>
+            <p data-i18n="erveca.desc">Nuestro proyecto matriz: un RPG de aventura con estética fantástica medieval ambientado en la comarca de Cameros, La Rioja, con apoyo del Gobierno de La Rioja.</p>
+            <span class="card-link" data-i18n="erveca.link">Ver en itch.io →</span>
           </div>
         </a>
 
@@ -103,47 +101,45 @@
     </div>
   </section>
 
-  <!-- QUIÉNES SOMOS (resumen) -->
   <section id="estudio">
     <div class="section-inner about">
       <div class="about-text">
-        <p class="section-label fade-up">Quiénes somos</p>
-        <h2 class="fade-up d1">Un estudio pequeño<br />con <em>mucho territorio</em></h2>
-        <p class="fade-up d2">
+        <p class="section-label fade-up" data-i18n="about.label">Quiénes somos</p>
+        <h2 class="fade-up d1" data-i18n-html="about.title">Un estudio pequeño<br />con <em>mucho territorio</em></h2>
+        <p class="fade-up d2" data-i18n="about.p1">
           Somos Samuel Noval e Isabel López, dos desarrolladores afincados en Pradillo, un pequeño pueblo de la sierra riojana. Desde 2023 creamos videojuegos que ponen en valor la cultura, el paisaje y las tradiciones de La Rioja.
         </p>
-        <p class="fade-up d2">
+        <p class="fade-up d2" data-i18n="about.p2">
           Nuestros juegos nacen de la tierra: los nonogramas de Almazuela Picross homenajean las almazuelas de las artesanas de Pradillo; Erveca recorre los valles de Cameros. Cada píxel tiene raíces.
         </p>
         <div class="btn-group fade-up d3" style="margin-top: 2rem;">
-          <a href="pages/team.html" class="btn btn-secondary">Conoce al equipo →</a>
+          <a href="pages/team.html" class="btn btn-secondary" data-i18n="about.btn">Conoce al equipo →</a>
         </div>
         <div class="stats fade-up d3">
           <div>
             <div class="stat-num">3</div>
-            <div class="stat-label">Juegos</div>
+            <div class="stat-label" data-i18n="stats.games">Juegos</div>
           </div>
           <div>
             <div class="stat-num">31</div>
-            <div class="stat-label">Almazuelas reales</div>
+            <div class="stat-label" data-i18n="stats.almazuelas">Almazuelas reales</div>
           </div>
           <div>
             <div class="stat-num">∞</div>
-            <div class="stat-label">Historias que contar</div>
+            <div class="stat-label" data-i18n="stats.stories">Historias que contar</div>
           </div>
         </div>
       </div>
 
       <div class="about-image fade-up d4">
         <div class="about-image-inner">
-          <img src="img/EquipoPradillo.jpg" alt="Samuel e Isabel trabajando en Pradillo, La Rioja" loading="lazy" />
+          <img src="img/EquipoPradillo.jpg" data-i18n-attr="alt:about.alt" alt="Samuel e Isabel trabajando en Pradillo, La Rioja" loading="lazy" />
         </div>
         <div class="about-deco"></div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <div class="footer-brand">
       <img src="img/LogotipoB.png" alt="" />
@@ -154,7 +150,7 @@
       <li><a href="https://www.facebook.com/ErvecaRPG" target="_blank" rel="noopener">Facebook</a></li>
       <li><a href="https://www.youtube.com/@ErvecaStudio" target="_blank" rel="noopener">YouTube</a></li>
     </ul>
-    <p class="footer-copy">© 2024–2026 Erveca Studio · Pradillo, La Rioja, España</p>
+    <p class="footer-copy" data-i18n="footer.copy">© 2024–2026 Erveca Studio · Pradillo, La Rioja, España</p>
   </footer>
 
   <script src="js/hero-animation.js"></script>

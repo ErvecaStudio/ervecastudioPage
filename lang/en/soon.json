@@ -1,0 +1,115 @@
+{
+  "meta.title": "Coming soon — Erveca Studio",
+  "meta.desc": "Erveca Studio roadmap: events, fairs and the development of Almazuela Picross, Erveca and our new puzzle game.",
+  "meta.keywords": "Erveca Studio, roadmap, coming soon, video game events La Rioja, Almazuela Picross, Erveca RPG",
+  "hero.label": "Coming soon",
+  "hero.title": "Where we <em>stand</em>",
+  "hero.lead": "Here we tell you what we're working on and where you'll find us. Each path reads from bottom to top: what we've already covered sits at the bottom and what is still to come is at the top. When you open it, we drop you straight at the next stop.",
+  "tabs.aria": "Roadmaps",
+  "roadmap.more": "Load more",
+  "roadmap.top": "Back to top ↑",
+  "roadmap.loading": "Loading roadmap…",
+  "roadmap.status": "From bottom to top: {n} stops on the {label} roadmap.",
+  "roadmap.empty": "No dates published yet for {label}.",
+  "roadmap.error": "We couldn't load the dates. Please reload the page in a moment.",
+  "data": {
+    "tracks": {
+      "eventos": {
+        "label": "Events",
+        "intro": "Fairs, workshops and meetups where we'll be, with Cameros front and centre.",
+        "items": {
+          "2026-09-12": {
+            "dateLabel": "12–13 September 2026",
+            "description": "We bring Almazuela Picross to Zaragoza for the first time at an event full of talks and indie game demos."
+          },
+          "2026-09-21": {
+            "dateLabel": "19–20 September 2026",
+            "description": "We take Almazuela Picross to the Irun expotaku for two days with our own stand. See you there?",
+            "place": "Irun, Gipuzkoa"
+          },
+          "2026-10-03": {
+            "dateLabel": "2 October 2026",
+            "title": "Digitising cultural heritage for video games",
+            "description": "We'll explain how we digitised cultural elements for a video game, understanding its limitations, and we'll create designs working on the Almazuelas.",
+            "place": "La Rioja Library, Logroño"
+          },
+          "2026-10-19": {
+            "dateLabel": "16–18 October 2026",
+            "title": "Erveca Space at the 3rd Rioja Comic Festival",
+            "description": "Sewing, workshops on the impact of video games on us, and a showcase of Almazuela Picross, Erveca: Goddess of the skies, and projects from other studios such as Unclouded and Vareia.",
+            "place": "Riojan Youth Institute, Logroño"
+          },
+          "2026-11-12": {
+            "dateLabel": "12 November 2026",
+            "title": "Heritage Autumn 2026",
+            "description": "We'll talk about how to carry heritage into the digital age through video games, and we'll play Almazuela Picross while looking at original almazuelas.",
+            "place": "Serendipia café-bar, Logroño"
+          },
+          "2026-11-19": {
+            "dateLabel": "19 November 2026",
+            "description": "A talk on how video games have entered our lives through mobile devices and a workshop on how to create a game with Unity in a small team."
+          },
+          "2026-11-21": {
+            "dateLabel": "21 November 2026",
+            "title": "3rd La Rioja Culture Meeting",
+            "description": "Who we are as a game studio, how we work and where we're heading."
+          },
+          "2026-12-01": {
+            "dateLabel": "1 December 2026",
+            "description": "We present Almazuela Picross at this digital event with handcrafted demos, without generative AI, from more than 25 studios."
+          }
+        }
+      },
+      "almazuela-picross": {
+        "intro": "Our nonogram (picross) puzzle on Steam and Google Play keeps growing with new patches. Will you join us in weaving an almazuela?",
+        "items": {
+          "2026-05-26": {
+            "dateLabel": "26 May 2026",
+            "title": "Launch on Steam and Google Play",
+            "description": "The digital almazuela workshop arrives on PC and Android. Will you help us weave the 20 almazuelas the artisans of Cameros have shown us?"
+          },
+          "2026-08-22": {
+            "dateLabel": "22 August 2026",
+            "title": "14th Hanging Almazuelas Festival",
+            "description": "An update with eight more almazuelas from the Cameros region and an almazuela design contest for everyone who wants to take part!"
+          },
+          "2026-11-01": {
+            "dateLabel": "31 October 2026",
+            "title": "Autumn update",
+            "description": "Four new almazuelas from Villoslada de Cameros and accessibility improvements so that no one is left unable to weave."
+          }
+        }
+      },
+      "erveca": {
+        "intro": "The adventure RPG set in the Thirteen Villages of Camero Nuevo, where fantasy blends with the traditions and legends of its villages: our flagship project.",
+        "items": {
+          "2025-12-27": {
+            "dateLabel": "27–28 December 2025",
+            "title": "Quests demo",
+            "description": "Creation of the event and quest system with a first playable commission in which you can roam the map looking for 5 almazuelas."
+          },
+          "2026-02-07": {
+            "dateLabel": "7–8 February 2026",
+            "title": "Bug fixes and atmosphere improvements",
+            "description": "New graphic elements that improve the atmosphere and fixes for bugs in the quests demo."
+          },
+          "2027-03-07": {
+            "dateLabel": "First quarter 2027",
+            "title": "Public demo on itch.io",
+            "description": "Bringing the Almazuela Picross systems into Erveca, adding content to the existing demo."
+          }
+        }
+      },
+      "goddess": {
+        "intro": "We start at the end: the narrative game that begins by telling what happened to the Erveca valley after the ending of the original title. You won't need to have followed Erveca's development to enjoy it.",
+        "items": {
+          "2026-11-30": {
+            "dateLabel": "November 2026",
+            "title": "Steam page",
+            "description": "Creation of the Steam page and first steps to prepare the playtest. Throughout this month the game will be shown at all our events. See events."
+          }
+        }
+      }
+    }
+  }
+}

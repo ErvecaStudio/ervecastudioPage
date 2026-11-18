@@ -1,0 +1,78 @@
+{
+  "meta.title": "Événements — Erveca Studio",
+  "meta.desc": "Où nous retrouver : showcases et conférences d'Erveca Studio, jour après jour.",
+  "meta.keywords": "Erveca Studio, événements, salons, showcase, conférences, jeux vidéo La Rioja",
+  "hero.label": "Événements",
+  "hero.title": "Où nous <em>retrouver</em>",
+  "days.aria": "Jours de l'événement",
+  "logos.aria": "Partenaires de l'événement",
+  "ev.talk": "Conférence",
+  "ev.tbc": "Horaire à confirmer",
+  "ev.count.one": "{n} activité programmée ce jour-là.",
+  "ev.count.other": "{n} activités programmées ce jour-là.",
+  "ev.empty": "Aucune activité publiée pour le moment ce jour-là.",
+  "ev.nodays": "Aucune date publiée pour le moment pour cet événement.",
+  "ev.error": "Impossible de charger les événements. Rechargez la page dans un instant.",
+  "data": {
+    "events": {
+      "rioja-comic-2026": {
+        "name": "3e Festival Rioja Comic",
+        "place": "Institut riojan de la jeunesse, Logroño",
+        "days": {
+          "2026-10-16": "ven. 16 oct.",
+          "2026-10-17": "sam. 17 oct.",
+          "2026-10-18": "dim. 18 oct."
+        }
+      },
+      "artefacto-2026": {
+        "days": { "2026-11-19": "jeu. 19 nov." }
+      }
+    },
+    "alts": {
+      "Gobierno de La Rioja": "Gouvernement de La Rioja",
+      "Instituto Riojano de la Juventud": "Institut riojan de la jeunesse",
+      "Ayuntamiento de Logroño": "Mairie de Logroño"
+    },
+    "activities": {
+      "Almazuela Picross": {
+        "description": "Recréez des almazuelas, des couvertures traditionnelles de la sierra de Cameros, tout en résolvant des puzzles logiques."
+      },
+      "???": {
+        "description": "Le prochain jeu vidéo d'Erveca Studio. Il sera présenté en exclusivité lors de cet événement. Voudrez-vous l'essayer ?"
+      },
+      "¿Cómo se hace una almazuela?": {
+        "title": "Comment fait-on une almazuela ?",
+        "showedType": "Atelier",
+        "authors": "Maria del Rosario Ruiz - Artisane",
+        "description": "Nous parlerons de la tradition textile de Cameros tout en réalisant une petite almazuela avec les méthodes d'hier et d'aujourd'hui."
+      },
+      "Más allá de la partida": {
+        "title": "Au-delà de la partie",
+        "showedType": "Atelier",
+        "authors": "Jone Valencia et Lucía Ortega - Psychologues",
+        "description": "Dans cet atelier, nous aborderons les jeux vidéo avec curiosité, plaisir et bienveillance. Nous partagerons des expériences, nous parlerons de la façon d'intégrer le jeu dans notre vie de manière saine et nous découvrirons ce qui se passe lorsque nous faisons une pause, nous reconnectons à nous-mêmes et jouons avec d'autres personnes. \n\nAu-delà de la partie, il y a tout un monde à découvrir."
+      },
+      "Unclouded": {
+        "description": "Unclouded s'appuie sur la simplicité du démineur avec des mécaniques de gestion de ressources pour créer une expérience solo attrayante, rejouable, fraîche et familière."
+      },
+      "Cultura 3.0": {
+        "showedType": "Conférence",
+        "authors": "Samuel Noval - Développeur",
+        "description": "Comment faire de la culture de son environnement un trait distinctif au sein d'un projet artistique, en la partageant avec le monde et en renforçant sa valeur face aux nouvelles formes de création automatisée."
+      },
+      "Ludovareia": {
+        "description": "La ville romaine de Vareia a beaucoup d'histoire. Vous pouvez la découvrir à travers des puzzles et des mini-jeux. On apprend l'histoire en jouant, et on s'amuse."
+      },
+      "El móvil: la consola que ya tienen en el bolsillo": {
+        "title": "Le téléphone : la console qu'ils ont déjà dans la poche",
+        "showedType": "Conférence",
+        "description": "Nous parlerons de la façon dont les jeux vidéo se sont introduits dans nos vies via les appareils mobiles et de la manière dont cela a changé notre façon de jouer, d'interagir avec le monde numérique et de créer des jeux vidéo."
+      },
+      "Crear un videojuego sencillo con un equipo pequeño": {
+        "title": "Créer un jeu vidéo simple avec une petite équipe",
+        "showedType": "Atelier",
+        "description": "Atelier sur la création d'un jeu vidéo avec Unity au sein d'une petite équipe. Nous expliquerons le processus, la répartition des tâches et les outils les plus simples pour créer. Un accompagnement sera également proposé à ceux qui, à la fin de l'atelier, souhaitent poursuivre le développement de leur propre projet.\n\nPour le cours, les ordinateurs du centre seront utilisés : il n'est donc pas nécessaire d'apporter d'appareil. Aucune connaissance préalable en programmation, design ou développement n'est requise."
+      }
+    }
+  }
+}

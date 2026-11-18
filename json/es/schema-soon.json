@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Próximamente - Erveca Studio",
+  "url": "https://ervecastudio.es/pages/soon.html",
+  "description": "Hoja de ruta de Erveca Studio: eventos, ferias y el desarrollo de Almazuela Picross, Erveca y nuestro nuevo juego de puzles.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Erveca Studio",
+    "url": "https://ervecastudio.es"
+  }
+}

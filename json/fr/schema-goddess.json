@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "Erveca: Goddess of the Skies",
+  "author": "Erveca Studio",
+  "publisher": "Erveca Studio",
+  "url": "https://ervecastudio.es/pages/games.html#goddess-of-the-skies",
+  "image": "https://ervecastudio.es/img/ET_Capsule.png",
+  "genre": "Puzzle, Adventure",
+  "gamePlatform": ["PC", "Android"],
+  "description": "Prochain jeu d'Erveca Studio où la tranquillité et la culture passent avant tout : explorez des îles inspirées de l'architecture des villages de Cameros et résolvez des puzzles logiques en utilisant l'environnement."
+}

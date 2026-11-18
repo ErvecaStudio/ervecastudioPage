@@ -1,0 +1,15 @@
+{
+  "meta.title": "Próximamente — Erveca Studio",
+  "meta.desc": "Hoja de ruta de Erveca Studio: eventos, ferias y el desarrollo de Almazuela Picross, Erveca y nuestro nuevo juego de puzles.",
+  "meta.keywords": "Erveca Studio, roadmap, próximamente, eventos videojuegos La Rioja, Almazuela Picross, Erveca RPG",
+  "hero.label": "Próximamente",
+  "hero.title": "Por dónde <em>vamos</em>",
+  "hero.lead": "Aquí contamos en qué estamos trabajando y dónde nos vas a encontrar. Cada camino se lee de abajo arriba: al pie queda lo ya recorrido y arriba lo que todavía está por llegar. Al abrirlo te dejamos directamente en la próxima parada.",
+  "tabs.aria": "Hojas de ruta",
+  "roadmap.more": "Cargar más",
+  "roadmap.top": "Subir ↑",
+  "roadmap.loading": "Cargando hoja de ruta…",
+  "roadmap.status": "De abajo arriba: {n} paradas de {label}.",
+  "roadmap.empty": "Todavía no hay fechas publicadas para {label}.",
+  "roadmap.error": "No hemos podido cargar las fechas. Recarga la página en un momento."
+}

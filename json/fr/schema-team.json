@@ -1,0 +1,20 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Erveca Studio",
+  "url": "https://ervecastudio.es/pages/team.html",
+  "member": [
+    {
+      "@type": "Person",
+      "name": "Samuel Noval Ruiz",
+      "jobTitle": "Developer & Direction",
+      "worksFor": "Erveca Studio"
+    },
+    {
+      "@type": "Person",
+      "name": "Isabel López Sierra",
+      "jobTitle": "Designer",
+      "worksFor": "Erveca Studio"
+    }
+  ]
+}

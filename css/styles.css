@@ -41,6 +41,8 @@ body {
 
 img { max-width: 100%; display: block; }
 
+.i18n-pending body{visibility:hidden}
+
 /* ── NOISE TEXTURE overlay ── */
 body::before {
   content: '';

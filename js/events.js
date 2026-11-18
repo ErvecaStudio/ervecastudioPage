@@ -12,8 +12,35 @@
   if (!tabsEl || !gridEl) return;
 
   var events = [];
-  var current = null;   
-  var currentDay = null; 
+
+  function localize(list) {
+    var d = i18n.raw('data') || {};
+    var evs = d.events || {};
+    var alts = d.alts || {};
+    var acts = d.activities || {};
+    var alt = function (x) {
+      return x && Object.assign({}, x, { alt: alts[x.alt] || x.alt });
+    };
+    return list.map(function (ev) {
+      var o = evs[ev.id] || {};
+      return Object.assign({}, ev, {
+        name: o.name || ev.name,
+        place: (ev.place && typeof ev.place === 'object')
+          ? Object.assign({}, ev.place, { name: o.place || ev.place.name })
+          : ev.place,
+        logo: alt(ev.logo),
+        logos: (ev.logos || []).map(alt),
+        days: (ev.days || []).map(function (day) {
+          return Object.assign({}, day, {
+            dateLabel: (o.days || {})[day.date] || day.dateLabel,
+            activities: (day.activities || []).map(function (a) {
+              return Object.assign({}, a, acts[a.title]);
+            })
+          });
+        })
+      });
+    });
+  }
 
   function parseDate(value) {
     if (!value) return null;
@@ -222,7 +249,7 @@
     if (linked) {
       var link = document.createElement('span');
       link.className = 'card-link';
-      link.textContent = 'Más información →';
+      link.textContent = i18n.t('ui.more');
       body.appendChild(link);
     }
 
@@ -244,7 +271,7 @@
 
     var eyebrow = document.createElement('p');
     eyebrow.className = 'activity-eyebrow charla';
-    eyebrow.textContent = item.showedType || 'Charla';
+    eyebrow.textContent = item.showedType || i18n.t('ev.talk');
     body.appendChild(eyebrow);
 
     var h = document.createElement('h3');
@@ -267,7 +294,7 @@
     if (linked) {
       var link = document.createElement('span');
       link.className = 'card-link';
-      link.textContent = 'Más información →';
+      link.textContent = i18n.t('ui.more');
       body.appendChild(link);
     }
 
@@ -296,7 +323,7 @@
   }
 
   function formatTimeRange(start, end) {
-    if (!start) return 'Horario por confirmar';
+    if (!start) return i18n.t('ev.tbc');
     return end && end !== start ? (start + ' – ' + end) : start;
   }
 
@@ -339,13 +366,12 @@
 
     if (statusEl) {
       statusEl.textContent = items.length
-        ? items.length + ' actividad' + (items.length === 1 ? '' : 'es') + ' programada' + (items.length === 1 ? '' : 's') + ' para este día.'
-        : 'Todavía no hay actividades publicadas para este día.';
+        ? i18n.t(items.length === 1 ? 'ev.count.one' : 'ev.count.other', { n: items.length })
+        : i18n.t('ev.empty');
     }
   }
 
   function selectDay(day) {
-    currentDay = day;
     var btns = tabsEl.querySelectorAll('.track-tab');
     for (var i = 0; i < btns.length; i++) {
       var on = btns[i].dataset.date === day.date;
@@ -358,14 +384,13 @@
   }
 
   function init(ev) {
-    current = ev;
     renderHeader(ev);
     renderTabs(ev);
     renderEventLogos(ev);
 
     var days = ev.days || [];
     if (!days.length) {
-      if (statusEl) statusEl.textContent = 'Todavía no hay fechas publicadas para este evento.';
+      if (statusEl) statusEl.textContent = i18n.t('ev.nodays');
       return;
     }
 
@@ -374,13 +399,15 @@
     selectDay(target, false);
   }
 
-  fetch(DATA_URL)
-    .then(function (r) {
+  Promise.all([
+    fetch(DATA_URL).then(function (r) {
       if (!r.ok) throw new Error(r.status);
       return r.json();
-    })
-    .then(function (json) {
-      events = (json && json.events) || [];
+    }),
+    i18n.ready
+  ])
+    .then(function (res) {
+      events = localize((res[0] && res[0].events) || []);
       if (!events.length) throw new Error('sin datos');
       var params = new URLSearchParams(location.search);
       var idxParam = params.get('event');
@@ -389,6 +416,7 @@
       init(ev);
     })
     .catch(function () {
-      if (statusEl) statusEl.textContent = 'No hemos podido cargar los eventos. Recarga la página en un momento.';
+      console.error('events:', err);
+      if (statusEl) statusEl.textContent = i18n.t('ev.error');
     });
 })();

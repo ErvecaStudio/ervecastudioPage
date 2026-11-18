@@ -1,0 +1,16 @@
+{
+  "meta.title": "Eventos — Erveca Studio",
+  "meta.desc": "Dónde nos vas a encontrar: showcases y charlas de Erveca Studio, día a día.",
+  "meta.keywords": "Erveca Studio, eventos, ferias, showcase, charlas, videojuegos La Rioja",
+  "hero.label": "Eventos",
+  "hero.title": "Dónde nos vas a <em>encontrar</em>",
+  "days.aria": "Días del evento",
+  "logos.aria": "Colaboradores del evento",
+  "ev.talk": "Charla",
+  "ev.tbc": "Horario por confirmar",
+  "ev.count.one": "{n} actividad programada para este día.",
+  "ev.count.other": "{n} actividades programadas para este día.",
+  "ev.empty": "Todavía no hay actividades publicadas para este día.",
+  "ev.nodays": "Todavía no hay fechas publicadas para este evento.",
+  "ev.error": "No hemos podido cargar los eventos. Recarga la página en un momento."
+}
