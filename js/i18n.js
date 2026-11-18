@@ -28,6 +28,7 @@
       storeSet('lang-test', q);
       return q;
     }
+    if (/bot|crawl|spider|lighthouse/i.test(navigator.userAgent)) return SOURCE;
 
     var s = storeGet('lang-test');
     if (SUPPORTED.indexOf(s) > -1) return s;
