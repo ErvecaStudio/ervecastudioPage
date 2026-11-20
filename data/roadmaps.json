@@ -81,10 +81,10 @@
           "dateLabel": "27-28 noviembre 2026",
           "title": "VI Jornadas de creación digital y videojuegos de Navarra",
           "description": "Evento que reune a la comunidad que gira en torno al videojuego y donde mostraremos nuestros dos títulos: Almazuela Picross y Erveca: Goddes of the skies.",
-          "image": "../img/VINavarra.png",
+          "image": "../img/VINavarra.webp",
           "place": "Baluarte, Pamplona",
           "link": "https://www.baluarte.com/es/agenda/evento/vi-jornadas-de-creacion-digital-y-videojuegos-27-28-noviembre-2026",
-          "linkPermanent": false          
+          "linkPermanent": false
         },
         {
           "date": "2026-12-01",

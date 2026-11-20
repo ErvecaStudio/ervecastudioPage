@@ -17,11 +17,11 @@ const json = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
       item.image = item.image.replace(/\.(png|jpe?g)$/i, '.webp');
     }
   }
-  const root = path.resolve('data');
+  const root = path.resolve('img');
   const gitignorePath = path.resolve('.gitignore');
   const dupes = fs.readdirSync(root, { recursive: true })
-    .filter(f => /\.png$/i.test(f) && fs.existsSync(path.join(root, f.replace(/\.png$/i, '.webp'))))
-    .map(f => 'data/' + f.split(path.sep).join('/'));
+    .filter(f => !f.includes('node_modules') && /\.png$/i.test(f) && fs.existsSync(path.join(root, f.replace(/\.png$/i, '.webp'))))
+    .map(f => 'img/' + f.split(path.sep).join('/'));
   const current = fs.existsSync(gitignorePath) ? fs.readFileSync(gitignorePath, 'utf8') : '';
   const known = new Set(current.split(/\r?\n/));
   const toAdd = dupes.filter(l => !known.has(l));
