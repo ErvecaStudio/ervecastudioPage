@@ -4,7 +4,6 @@ const sharp = require('sharp');
 
 const jsonPath = path.resolve('data/roadmaps.json');
 const json = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
-
 (async () => {
   for (const track of json.tracks) {
     for (const item of track.items) {
@@ -17,6 +16,17 @@ const json = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
         .toFile(out);
       item.image = item.image.replace(/\.(png|jpe?g)$/i, '.webp');
     }
+  }
+  const root = path.resolve('data');
+  const gitignorePath = path.resolve('.gitignore');
+  const dupes = fs.readdirSync(root, { recursive: true })
+    .filter(f => /\.png$/i.test(f) && fs.existsSync(path.join(root, f.replace(/\.png$/i, '.webp'))))
+    .map(f => 'data/' + f.split(path.sep).join('/'));
+  const current = fs.existsSync(gitignorePath) ? fs.readFileSync(gitignorePath, 'utf8') : '';
+  const known = new Set(current.split(/\r?\n/));
+  const toAdd = dupes.filter(l => !known.has(l));
+  if (toAdd.length) {
+    fs.appendFileSync(gitignorePath, (current && !current.endsWith('\n') ? '\n' : '') + toAdd.join('\n') + '\n');
   }
   fs.writeFileSync(jsonPath, JSON.stringify(json, null, 2));
 })();
